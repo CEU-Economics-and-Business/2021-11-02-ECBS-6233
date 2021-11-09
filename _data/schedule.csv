@@ -1,25 +1,24 @@
-Date,DoW,end_date,end_time,Start,End,Instructor,Topic,Link
-11/10,Tuesday,,,11:00,12:40,Fleck,Pre-workshop survey,https://carpentries.typeform.com/to/wi32rS?slug=2021-11-02-ECBS-6233
-,,,,,,,Introduction to the command line,https://datacarpentry.org/shell-economics/01-introduction/index.html
-,,,1,,,,Navigating files and directories,https://datacarpentry.org/shell-economics/02-the-filesystem/index.html
-,,,,15:30,17:10,Fleck,Setting up Git (Extra: register on GitHub!),https://dlstrong.github.io/git-novice/02-setup/index.html
-,,,,,,,Creating a Repository,https://dlstrong.github.io/git-novice/03-create/index.html
-,,,,,,,Tracking Changes,https://dlstrong.github.io/git-novice/04-changes/index.html
-,,,,,,,Pushing and Pulling to and from GitHub,https://dlstrong.github.io/git-novice/06-push-pull/index.html
-,,1,1,,,,Sharing One Repository,https://dlstrong.github.io/git-novice/10-collab/index.html
-11/12,Thursday,,,9:00,10:40,Koren,Install Python via miniconda and set up jupyter lab.,https://swcarpentry.github.io/python-novice-gapminder/
-,,,1,,,,Python fundamentals.,https://swcarpentry.github.io/python-novice-gapminder/
-,,1,1,11:00,12:40,Koren,Breaking up code into functions.,https://swcarpentry.github.io/python-novice-gapminder/16-writing-functions/index.html
-11/17,Tuesday,,,11:00,12:40,Koren,Using code written by others.,https://swcarpentry.github.io/python-novice-gapminder/06-libraries/index.html
-,,,1,,,,Storing your data in lists and dictionaries.,https://swcarpentry.github.io/python-novice-gapminder/11-lists/index.html
-,,1,1,15:30,17:10,Koren,Repeat Tasks with Loops,https://swcarpentry.github.io/python-novice-gapminder/12-for-loops/index.html
-11/19,Thursday,,,9:00,10:40,Fleck,Read and Explore Data (+Setup),https://datacarpentry.org/stata-economics/01-explore-data/index.html
-,,,1,,,,Data Formats and Data Quality,https://datacarpentry.org/stata-economics/02-data-quality/index.html
-,,,,11:00,12:40,Fleck,Transform Data,https://datacarpentry.org/stata-economics/03-transform-data/index.html
-,,1,1,,,,Combine Data,https://datacarpentry.org/stata-economics/04-combine-data/index.html
-11/24,Tuesday,,,11:00,12:40,Fleck,Save and Reuse your Work in .do Files,https://datacarpentry.org/stata-economics/05-programming/index.html
-,,,1,,,,Repeat Tasks with Loops,https://datacarpentry.org/stata-economics/06-loops/index.html
-,,1,1,15:30,17:10,Fleck,Saving your .do files with Git,I will add a lesson on this.
-11/26,Thursday,,1,9:00,10:40,Koren,Reading and writing files in different formats,
-,,,,11:00,12:40,Koren,Finding and installing user-written Stata packages,
-,,1,1,,,,Post-workshop survey,https://carpentries.typeform.com/to/UgVdRQ?slug=2021-11-02-ECBS-6233
+Date,DoW,end_date,Start,End,Instructor,Topic,Link
+11/2,Tuesday,1,15:40,17:20,Koren,Course introduction. Why work reproducibly?,
+11/9,Tuesday,,15:40,17:20,Koren,Pre-workshop survey,https://carpentries.typeform.com/to/wi32rS?slug=2021-11-02-ECBS-6233
+,,,,,,Introduction to the command line,https://datacarpentry.org/shell-economics/01-introduction/index.html
+,,,,,,Navigating files and directories,https://datacarpentry.org/shell-economics/02-the-filesystem/index.html
+,,,,,,Why git?,https://gcapes.github.io/git-course/01-introduction/index.html
+,,,,,,Tracking Changes,https://gcapes.github.io/git-course/02-local/index.html
+,,,,,,Looking at History,https://gcapes.github.io/git-course/03-history/index.html
+,,,,,,Commit Advice,https://gcapes.github.io/git-course/04-commit-advice/index.html
+,,,,,,Pushing and Pulling to and from GitHub,https://gcapes.github.io/git-course/08-remote/index.html
+,,,,,,Sharing One Repository,https://dlstrong.github.io/git-novice/10-collab/index.html
+,,,,,,Branching,https://gcapes.github.io/git-course/05-branching/index.html
+,,1,,,,Pull Requests,https://dlstrong.github.io/git-novice/08-pull-request/index.html
+11/16,Tuesday,,15:40,17:20,Koren,Read and Explore Data in Stata (+Setup),https://datacarpentry.org/stata-economics/01-explore-data/index.html
+,,,,,,Data Formats and Data Quality,https://datacarpentry.org/stata-economics/02-data-quality/index.html
+,,,,,,Transform Data,https://datacarpentry.org/stata-economics/03-transform-data/index.html
+,,,,,,Combine Data,https://datacarpentry.org/stata-economics/04-combine-data/index.html
+,,,,,,Save and Reuse your Work in .do Files,https://datacarpentry.org/stata-economics/05-programming/index.html
+,,,,,,Repeat Tasks with Loops,https://datacarpentry.org/stata-economics/06-loops/index.html
+,,1,,,,Saving your .do files with Git,I will add a lesson on this.
+11/23,Tuesday,1,15:40,17:20,Koren,,
+11/30,Tuesday,1,15:40,17:20,Koren,,
+12/07/21,Tuesday,,15:40,17:20,Koren,,
+,,1,,,,Post-workshop survey,https://carpentries.typeform.com/to/UgVdRQ?slug=2021-11-02-ECBS-6233
