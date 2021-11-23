@@ -1,0 +1,887 @@
+]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mWelcome to fish, the friendly interactive shell
+[?2004h]7;file://iMac.local/Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kt[38;5;196mt[30m(B[m[38;5;240mouch data/employment.csv[24D[30m(B[m[38;5;196mr[30m(B[m[K[38;5;240mee[30m(B[m[38;5;26mtr[38;5;240mee[30m(B[m[38;5;26me[38;5;240me[30m(B[m[38;5;196mtre[38;5;240me[30m(B[m[K[38;5;26mtr[30m(B[m[K[38;5;196mt[30m(B[m[Kl[38;5;196ml[30m(B[m[38;5;240ms -hal[30m(B[m[38;5;196ms[38;5;240m -hal[30m(B[m[38;5;26mls[38;5;240m -hal[30m(B[m[38;5;26m [38;5;240m-hal[30m(B[m [38;5;240m-hal[30m(B[m-[38;5;240mhal[30m(B[m[38;5;39m-[38;5;240mhal[30m(B[m[38;5;39mh[38;5;240mal[30m(B[m[38;5;39ma[38;5;240ml[30m(B[m[38;5;39ml[30m(B[m
+[30m(B[m[?2004l]0;ls /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mtotal 616
+drwxr-xr-x  14 koren  staff   448B Nov 23 16:12 [34m.[39;49m[0m
+drwxr-xr-x   8 koren  staff   256B Nov 23 16:12 [34m..[39;49m[0m
+drwxr-xr-x  12 koren  staff   384B Nov 23 16:12 [34m.git[39;49m[0m
+-rw-r--r--   1 koren  staff    55B Nov 23 16:09 .gitignore
+-rw-r--r--   1 koren  staff    15K Nov 23 16:09 LICENSE.txt
+-rw-r--r--   1 koren  staff    41K Nov 23 16:09 README.docx
+-rw-r--r--   1 koren  staff   4.6K Nov 23 16:09 README.md
+-rw-r--r--   1 koren  staff   225K Nov 23 16:09 README.pdf
+drwxr-xr-x  11 koren  staff   352B Nov 23 16:09 [34mdata[39;49m[0m
+drwxr-xr-x   4 koren  staff   128B Nov 23 16:09 [34mprocessed[39;49m[0m
+-rw-r--r--   1 koren  staff   470B Nov 23 16:12 record.sh
+drwxr-xr-x   5 koren  staff   160B Nov 23 16:09 [34mresults[39;49m[0m
+-rw-r--r--   1 koren  staff   2.2K Nov 23 16:09 run.do
+drwxr-xr-x  10 koren  staff   320B Nov 23 16:09 [34mscripts[39;49m[0m
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kc[38;5;240murl -Lo record.sh https://raw.githubusercontent.com/codedthinking…[66D[30m(B[m[38;5;196mc[38;5;240murl -Lo record.sh https://raw.githubusercontent.com/codedthinking…[66D[30m(B[m[38;5;196ma[30m(B[m[K[38;5;240mt read_wdi_variables.l[22D[30m(B[m[38;5;196mt[38;5;240m read_wdi_variables.l[21D[30m(B[m[38;5;26mcat[38;5;240m read_wdi_variables.l[21D[30m(B[m[38;5;26m [38;5;240mread_wdi_variables.l[20D[30m(B[m [38;5;240mread_wdi_variables.l[20D[30m(B[mR[38;5;240mead_wdi_variables.l[19D[30m(B[m[38;5;39m[4mR[38;5;240m[24mead_wdi_variables.l[19D[30m(B[m[38;5;39m[4mE[38;5;240m[24mad_wdi_variables.l[18D[30m(B[m[38;5;39m[4mA[38;5;240m[24md_wdi_variables.l[17D[30m(B[m[38;5;39m[4mD[38;5;240m[24m_wdi_variables.l[16D[30m(B[m[38;5;39m[4mM[30m(B[m[K[38;5;240mE.docx [30m(B[m[38;5;39m[4mE[38;5;240m[24m.docx [30m(B[m[38;5;39m[4m.[38;5;240m[24mdocx [30m(B[m[38;5;39m[4mm[30m(B[m[K[38;5;240md [30m(B[m[38;5;39m[4md[38;5;240m[24m [30m(B[m[K
+[30m(B[m[?2004l]0;cat /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m# Teenage Driving, Mortality, and Risky Behaviors: Public Use Data Repository
+
+[`Overview`](#overview) [`Examples`](#examples) [`Terms of use`](#terms-of-use) [`Update history`](#update-history) 
+
+-----------
+
+## Overview 
+
+This repository contains data and code for:
+
+Huh, Jason and Reif, Julian. "Teenage Driving, Mortality, and Risky Behaviors." *American Economic Review: Insights*, December 2021, 3(4).
+
+It can be used for research, teaching, and replicating published results. The following diagram summarizes the organization of the repository:
+```
+driving                               # Project folder
+├── data                              #   Read-only (input) data
+├── processed                         #   Intermediate data
+├── results                           #   Output files
+|   ├── figures                       #     Figures (PDF)  
+|   ├── intermediate                  #     Intermediate results  
+|   └── tables                        #     Tables (LaTeX)
+├── scripts                           #   Code
+|   ├── libraries/stata               #     Add-on Stata packages
+|   ├── programs                      #     Auxiliary code called by scripts  
+|   ├── 1_import_data.do
+|   ├── 2_clean_data.do
+|   ├── 3_combine_data.do
+|   ├── 4_analysis.do
+|   ├── 5_supporting_analysis.do
+|   └── 6_tables.do
+└── run.do                            #   Master script
+```
+
+The included [README](README.pdf) describes the datasets and provides additional details about the analysis. To rerun the analysis from scratch, download this repository, delete the **processed** and **results** folders, and execute the Stata script **run.do**. Note that you need to define the global macro `Driving` on line 18 of **run.do** in order to run the analysis. This macro defines the location of the folder that contains **run.do**.
+
+## Examples
+
+1. Mortality rises by 5.84 deaths per 100,000 at the minimum legal driving age cutoff (see [Table 1, Column 2](https://julianreif.com/research/reif.aeri.2021.driving.pdf))
+
+```stata
+***
+* Stata code
+***
+* Load mortality data, convert deaths to death rates per 100,000
+use "https://julianreif.com/driving/data/mortality/derived/all.dta", clear
+replace cod_any = 100000*cod_any/(pop/12)
+
+* Create indicator for first month of driving eligibility
+gen firstmonth = (agemo_mda==0)
+
+* Estimate RD using rdrobust add-on package (ssc install rdrobust, replace)
+rdrobust cod_any agemo_mda, covs(firstmonth)
+```
+
+```R
+###
+# R code
+###
+library(tidyverse)
+library(haven)
+library(rdrobust)
+
+# Load mortality data, convert deaths to death rates per 100,000
+my_data <- read_dta("https://julianreif.com/driving/data/mortality/derived/all.dta")
+my_data <- my_data %>% mutate(cod_any = 100000*cod_any/(pop/12))
+
+# Create indicator for first month of driving eligibility
+my_data <- my_data %>% mutate(firstmonth = agemo_mda==0)
+
+# Estimate RD using rdrobust add-on package
+Y <- my_data$cod_any
+X <- my_data$agemo_mda
+C <- as.integer(my_data$firstmonth)
+summary(rdrobust(Y, X, covs = C))
+```
+
+2. Plot average annual vehicle miles traveled for ages 16-19 (see green dashed line in [Figure B.2](https://julianreif.com/research/reif.aeri.2021.driving.pdf))
+
+```stata
+***
+* Stata code
+***
+import excel "https://julianreif.com/driving/data/nhts/nhts_1983_2017.xlsx", firstrow clear
+format *1619 %12.0fc
+label var year "Year"
+label var both_1619 "VMT per licensed driver"
+
+local labels "xlabel(1983 1990 1995 2001 2009 2017) ylabel(0(2000)10000, gmax)"
+graph twoway connected both_1619 year, graphregion(fcolor(white)) `labels'
+```
+
+```R
+###
+# R code
+###
+library(openxlsx)
+library(tidyverse)
+
+my_data <- read.xlsx("https://julianreif.com/driving/data/nhts/nhts_1983_2017.xlsx")
+
+ggplot(my_data, aes(x=year, y=both_1619)) + geom_line() + geom_point(size=3) + theme_bw() +
+  theme(panel.grid.major.x=element_blank(), panel.grid.minor=element_blank()) +
+  scale_x_continuous(limits=c(1983, 2017), breaks=c(1983, 1990, 1995, 2001, 2009, 2017), 
+    labs(x="Year")) +
+  scale_y_continuous(limits=c(0, 10000), breaks=seq(0, 10000, 2000), 
+    labels=function(y) format(y, big.mark=","), labs(y="VMT per licensed driver"))
+
+```
+
+## Terms of use
+
+Any materials (books, articles, conference papers, theses, dissertations, reports, and other such publications) created that employ, reference, or otherwise use these data (in whole or in part) should credit this source. Please cite it as:
+
+Huh, J. and Reif, J. "Teenage Driving, Mortality, and Risky Behaviors." *American Economic Review: Insights*, December 2021, 3(4).
+
+
+## Update history
+
+* **September 13, 2021**
+  - Initial release
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kc[38;5;196mc[30m(B[m[38;5;240mat README.md[12D[30m(B[m[38;5;196ma[38;5;240mt README.md[11D[30m(B[m[38;5;196mt[38;5;240m README.md[10D[30m(B[m[38;5;26mcat[38;5;240m README.md[10D[30m(B[m[38;5;26m [38;5;240mREADME.md[9D[30m(B[m [38;5;240mREADME.md[9D[30m(B[ms[K[38;5;39m[4ms[30m(B[m[38;5;240mcripts/[30m(B[m[38;5;39m[4mc[38;5;240m[24mripts/[30m(B[m[38;5;39m[4mripts/[30m(B[m[38;5;39m[4mr[30m(B[m[9D[38;5;39mscripts/r[30m(B[m[38;5;39mu[30m(B[m[38;5;39mn[30m(B[m[15D[1m[100mcat scripts/run(B[m[30m[30m(B[m[15D[38;5;26mcat[30m(B[m [38;5;39mscripts/run[30m(B[m[38;5;39m.[30m(B[m[16D[1m[100mcat scripts/run.(B[m[30m[30m(B[m[16D[38;5;26mcat[30m(B[m [38;5;39mscripts/run.[30m(B[m[K[K[K[K[38;5;39m[4mscripts/[30m(B[m[K[K[K[K[K[K[K[K[K[K[38;5;196mca[30m(B[m[K[Kl[38;5;196ml[30m(B[m[38;5;240ms -hal[30m(B[m[38;5;196ms[38;5;240m -hal[30m(B[m[38;5;26mls[38;5;240m -hal[30m(B[m[38;5;26m [38;5;240m-hal[30m(B[m [38;5;240m-hal[30m(B[m-[38;5;240mhal[30m(B[m[38;5;39m-[38;5;240mhal[30m(B[m[38;5;39mh[38;5;240mal[30m(B[m[38;5;39ma[38;5;240ml[30m(B[m[38;5;39ml[30m(B[m
+[30m(B[m[?2004l]0;ls /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mtotal 616
+drwxr-xr-x  14 koren  staff   448B Nov 23 16:12 [34m.[39;49m[0m
+drwxr-xr-x   8 koren  staff   256B Nov 23 16:12 [34m..[39;49m[0m
+drwxr-xr-x  12 koren  staff   384B Nov 23 16:13 [34m.git[39;49m[0m
+-rw-r--r--   1 koren  staff    55B Nov 23 16:09 .gitignore
+-rw-r--r--   1 koren  staff    15K Nov 23 16:09 LICENSE.txt
+-rw-r--r--   1 koren  staff    41K Nov 23 16:09 README.docx
+-rw-r--r--   1 koren  staff   4.6K Nov 23 16:09 README.md
+-rw-r--r--   1 koren  staff   225K Nov 23 16:09 README.pdf
+drwxr-xr-x  11 koren  staff   352B Nov 23 16:09 [34mdata[39;49m[0m
+drwxr-xr-x   4 koren  staff   128B Nov 23 16:09 [34mprocessed[39;49m[0m
+-rw-r--r--   1 koren  staff   470B Nov 23 16:12 record.sh
+drwxr-xr-x   5 koren  staff   160B Nov 23 16:09 [34mresults[39;49m[0m
+-rw-r--r--   1 koren  staff   2.2K Nov 23 16:09 run.do
+drwxr-xr-x  10 koren  staff   320B Nov 23 16:09 [34mscripts[39;49m[0m
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kc[38;5;196mc[30m(B[m[38;5;240mat README.md[12D[30m(B[m[38;5;196ma[38;5;240mt README.md[11D[30m(B[m[38;5;196mt[38;5;240m README.md[10D[30m(B[m[38;5;26mcat[38;5;240m README.md[10D[30m(B[m[38;5;26m [38;5;240mREADME.md[9D[30m(B[m [38;5;240mREADME.md[9D[30m(B[mR[38;5;240mEADME.md[30m(B[m[38;5;39m[4mR[38;5;240m[24mEADME.md[30m(B[m[38;5;39m[4mru[30m(B[m[K[38;5;240mn.do [30m(B[m[38;5;39m[4mn[38;5;240m[24m.do [30m(B[m[38;5;39m[4m.do [30m(B[m[38;5;39mrun.do[30m(B[m 
+[30m(B[m[?2004l]0;cat /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m**********************
+* OVERVIEW
+*   This script generates tables and figures for the paper:
+*       "Teenage Driving, Mortality, and Risky Behaviors" (Jason Huh and Julian Reif)
+*   All raw data are stored in /data
+*   All tables are outputted to /results/tables
+*   All figures are outputted to /results/figures
+* 
+* SOFTWARE REQUIREMENTS
+*   Analyses run on Windows using Stata version 16
+*
+* TO PERFORM A CLEAN RUN, DELETE THE FOLLOWING TWO FOLDERS:
+*   /processed
+*   /results
+**********************
+
+* User must define this global macro to point to the folder path that includes this run.do script
+global Driving ""
+
+* Confirm that the global for the project root directory was defined
+assert !missing("$Driving")
+
+* Initialize log and record system parameters
+clear
+set more off
+cap mkdir "$Driving/scripts/logs"
+cap log close
+local datetime : di %tcCCYY.NN.DD!-HH.MM.SS `=clock("$S_DATE $S_TIME", "DMYhms")'
+local logfile "$Driving/scripts/logs/`datetime'.log.txt"
+log using "`logfile'", text
+
+di "Begin date and time: $S_DATE $S_TIME"
+di "Stata version: `c(stata_version)'"
+di "Updated as of: `c(born_date)'"
+di "Variant:       `=cond( c(MP),"MP",cond(c(SE),"SE",c(flavor)) )'"
+di "Processors:    `c(processors)'"
+di "OS:            `c(os)' `c(osdtl)'"
+di "Machine type:  `c(machine_type)'"
+
+* All required Stata packages are available in the /libraries/stata folder
+tokenize `"$S_ADO"', parse(";")
+while `"`1'"' != "" {
+  if `"`1'"'!="BASE" cap adopath - `"`1'"'
+  macro shift
+}
+adopath ++ "$Driving/scripts/libraries/stata"
+mata: mata mlib index
+
+* Stata version control
+version 16
+
+* Create directories for output files
+cap mkdir "$Driving/processed"
+cap mkdir "$Driving/processed/intermediate"
+cap mkdir "$Driving/results"
+cap mkdir "$Driving/results/figures"
+cap mkdir "$Driving/results/intermediate"
+cap mkdir "$Driving/results/tables"
+
+* Run all project scripts
+do "$Driving/scripts/1_import_data.do"
+do "$Driving/scripts/2_clean_data.do"
+do "$Driving/scripts/3_combine_data.do"
+do "$Driving/scripts/4_analysis.do"
+do "$Driving/scripts/5_supporting_analysis.do"
+do "$Driving/scripts/6_tables.do"
+
+* End log
+di "End date and time: $S_DATE $S_TIME"
+log close
+
+** EOF
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kl[38;5;240ms -hal[30m(B[m[38;5;196ml[38;5;240ms -hal[30m(B[m[38;5;196ms[38;5;240m -hal[30m(B[m[38;5;26mls[38;5;240m -hal[30m(B[m[38;5;26m [38;5;240m-hal[30m(B[m [38;5;240m-hal[30m(B[m-[38;5;240mhal[30m(B[m[38;5;39m-[38;5;240mhal[30m(B[m[38;5;39mh[38;5;240mal[30m(B[m[38;5;39ma[38;5;240ml[30m(B[m[38;5;39ml[30m(B[m[38;5;39m [30m(B[m [38;5;240m/Applications/Stata\ 16/StataMP.app/Contents/MacOS/[51D[30m(B[m*[K[38;5;37m*[30m(B[m[38;5;240m [30m(B[m[38;5;37m.[30m(B[m[38;5;39m.[30m(B[m[38;5;240mdo [30m(B[m[38;5;39md[38;5;240mo [30m(B[m[38;5;39mo[38;5;240m [30m(B[m[K
+[30m(B[m[?2004l]0;ls /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m-rw-r--r--  1 koren  staff   2.2K Nov 23 16:09 run.do
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Ks[38;5;240mtata[30m(B[m[38;5;196ms[38;5;240mtata[30m(B[m[38;5;196mt[38;5;240mata[30m(B[m[38;5;196ma[38;5;240mta[30m(B[m[38;5;196mt[38;5;240ma[30m(B[m[38;5;26mstat[38;5;240ma[30m(B[m[38;5;26ma[30m(B[m[38;5;26m [30m(B[m [38;5;240m-b do run.do[12D[30m(B[m[38;5;26m [30m(B[m[K [38;5;26m [30m(B[m[K[38;5;196msta[30m(B[m [38;5;196m [30m(B[m[K [38;5;196m [30m(B[m[K [38;5;196m [30m(B[m[K S [38;5;196mS[30m(B[m t [38;5;196mt[30m(B[m a [38;5;196ma[30m(B[m t [38;5;26mStat[30m(B[m a [38;5;26ma[30m(B[m M [38;5;196mStataM[30m(B[m P [38;5;196mP[30m(B[m [38;5;196m [30m(B[m[K [38;5;196m [30m(B[m[K[38;5;26mStata[30m(B[m [38;5;26m [30m(B[m[K [38;5;26m [30m(B[m[K[38;5;196mSta[30m(B[m [38;5;196m [30m(B[m[K [38;5;196m [30m(B[m[K [38;5;196m [30m(B[m[K s [38;5;196ms[30m(B[m t [38;5;196mt[30m(B[m a [38;5;196ma[30m(B[m t [38;5;26mstat[30m(B[m a [38;5;26ma[30m(B[m [C[38;5;240m-b do run.do[13D[30m(B[m[C [K- [38;5;39m-[30m(B[m b [38;5;39mb[30m(B[m [C[38;5;240mdo run.do[10D[30m(B[m[C [Kd [38;5;39m[4md[30m(B[m o [38;5;39mdo[30m(B[m [C[38;5;240mrun.do[30m(B[m[C [Kr [38;5;39m[4mr[30m(B[m u [38;5;39m[4mu[30m(B[m n [38;5;39m[4mn[30m(B[m . [38;5;39m[4m.[30m(B[m d [38;5;39m[4md[30m(B[m o [38;5;39m[4mo[30m(B[m [C
+[30m(B[m[?2004l]0;stata /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kstata -b do run.do[18D[38;5;26mstata[30m(B[m [38;5;39m-b[30m(B[m [38;5;39mdo[30m(B[m [38;5;39m[4mrun.do[30m(B[m[38;5;39mb [30m(B[md[38;5;39mo [30m(B[mr[38;5;39m[4mun.do[30m(B[m[K[11D[C [38;5;39mdo[30m(B[m [38;5;39mrun.do[11D[30m(B[m[38;5;39m/[30m(B[mb[38;5;39m d[30m(B[mo[38;5;39m run.do[11D[30m(B[m[38;5;39m[4m/b[30m(B[m [38;5;39mdo[30m(B[m [38;5;39mrun.do[11D[30m(B[m[38;5;39m[4mb [30m(B[md[38;5;39mo [30m(B[mr[38;5;39mun.do[30m(B[m[K[11D[38;5;39mb[30m(B[m [38;5;39mdo[30m(B[m [38;5;39mrun.do[11D[30m(B[m[38;5;39m-[30m(B[mb[38;5;39m d[30m(B[mo[38;5;39m run.do[11D[30m(B[m[38;5;39mb[30m(B[m [38;5;39mdo[30m(B[m [38;5;39mrun.do[11D[30m(B[m[C[C[C[C[C[C[C[C[C[C[C[38;5;39m[4mrun.do[30m(B[m
+[30m(B[m[?2004l]0;stata /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kl[38;5;196ml[30m(B[m[38;5;240ms -hal *.do[11D[30m(B[m[38;5;196ms[38;5;240m -hal *.do[10D[30m(B[m[38;5;26mls[38;5;240m -hal *.do[10D[30m(B[m[38;5;26m [38;5;240m-hal *.do[9D[30m(B[m [38;5;240m-hal *.do[9D[30m(B[m-[38;5;240mhal *.do[30m(B[m[38;5;39m-[38;5;240mhal *.do[30m(B[m[38;5;39mh[38;5;240mal *.do[30m(B[m[38;5;39ma[38;5;240ml *.do[30m(B[m[38;5;39ml[38;5;240m *.do[30m(B[m[K
+[30m(B[m[?2004l]0;ls /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mtotal 624
+drwxr-xr-x  15 koren  staff   480B Nov 23 16:19 [34m.[39;49m[0m
+drwxr-xr-x   8 koren  staff   256B Nov 23 16:12 [34m..[39;49m[0m
+drwxr-xr-x  12 koren  staff   384B Nov 23 16:19 [34m.git[39;49m[0m
+-rw-r--r--   1 koren  staff    55B Nov 23 16:09 .gitignore
+-rw-r--r--   1 koren  staff    15K Nov 23 16:09 LICENSE.txt
+-rw-r--r--   1 koren  staff    41K Nov 23 16:09 README.docx
+-rw-r--r--   1 koren  staff   4.6K Nov 23 16:09 README.md
+-rw-r--r--   1 koren  staff   225K Nov 23 16:09 README.pdf
+drwxr-xr-x  11 koren  staff   352B Nov 23 16:09 [34mdata[39;49m[0m
+drwxr-xr-x   4 koren  staff   128B Nov 23 16:09 [34mprocessed[39;49m[0m
+-rw-r--r--   1 koren  staff   470B Nov 23 16:12 record.sh
+drwxr-xr-x   5 koren  staff   160B Nov 23 16:09 [34mresults[39;49m[0m
+-rw-r--r--   1 koren  staff   2.2K Nov 23 16:09 run.do
+-rw-r--r--   1 koren  staff   1.7K Nov 23 16:19 run.log
+drwxr-xr-x  10 koren  staff   320B Nov 23 16:09 [34mscripts[39;49m[0m
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kt[38;5;196mt[30m(B[m[38;5;240mouch data/employment.csv[24D[30m(B[m[38;5;196ma[30m(B[m[K[38;5;240mil ~/GD/timelog.csv[19D[30m(B[m[38;5;196mi[38;5;240ml ~/GD/timelog.csv[18D[30m(B[m[38;5;196ml[38;5;240m ~/GD/timelog.csv[17D[30m(B[m[38;5;26mtail[38;5;240m ~/GD/timelog.csv[17D[30m(B[m[38;5;26m [38;5;240m~/GD/timelog.csv[16D[30m(B[m [38;5;240m~/GD/timelog.csv[16D[30m(B[mr[K[38;5;39m[4mr[30m(B[m[38;5;240mecord.sh [9D[30m(B[m[38;5;39m[4mu[30m(B[m[K[38;5;240mn.do [30m(B[m[38;5;39m[4mn[38;5;240m[24m.do [30m(B[m[38;5;39m[4m.[38;5;240m[24mdo [30m(B[m[38;5;39m[4ml[30m(B[m[K[38;5;240mog [30m(B[m[38;5;39m[4mo[38;5;240m[24mg [30m(B[m[38;5;39m[4mg[38;5;240m[24m [30m(B[m[K
+[30m(B[m[?2004l]0;tail /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m. global Driving ""
+
+. 
+. * Confirm that the global for the project root directory was defined
+. assert !missing("$Driving")
+assertion is false
+r(9);
+
+end of do-file
+r(9);
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kp[38;5;240ms -U koren | grep watch[23D[30m(B[m[38;5;196mp[38;5;240ms -U koren | grep watch[23D[30m(B[m[38;5;196mw[30m(B[m[K[38;5;240md[30m(B[m[38;5;196md[30m(B[m[38;5;26mpwd[30m(B[m
+[30m(B[m[?2004l]0;pwd /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m/Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kl[38;5;196ml[30m(B[m[38;5;240ms -hal[30m(B[m[38;5;196ms[38;5;240m -hal[30m(B[m[38;5;26mls[38;5;240m -hal[30m(B[m[38;5;26m [38;5;240m-hal[30m(B[m [38;5;240m-hal[30m(B[m-[38;5;240mhal[30m(B[m[38;5;39m-[38;5;240mhal[30m(B[m[38;5;39mh[38;5;240mal[30m(B[m[38;5;39ma[38;5;240ml[30m(B[m[38;5;39ml[30m(B[m[38;5;39m [30m(B[m [38;5;240m*.do[30m(B[mr[K[38;5;39m[4mr[30m(B[m[38;5;240mecord.sh [9D[30m(B[m[38;5;39m[4mu[30m(B[m[K[38;5;240mn.do [30m(B[m[38;5;39m[4mn[38;5;240m[24m.do [30m(B[m[38;5;39m[4m.do [30m(B[m[38;5;39mrun.do[30m(B[m 
+[30m(B[m[?2004l]0;ls /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m-rw-r--r--  1 koren  staff   2.2K Nov 23 16:21 run.do
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kls -hal run.do[14D[38;5;26mls[30m(B[m [38;5;39m-hal[30m(B[m [38;5;39m[4mrun.do[30m(B[m[14D[38;5;26mpw[30m(B[md[K[38;5;26md[30m(B[m[38;5;26mtail run.log[30m(B[m [38;5;39m[4mrun.log[30m(B[m[12D[38;5;26mls -[30m(B[mh[38;5;39m[4mal[30m(B[m[K [38;5;39m-hal[30m(B[m[38;5;26mst[30m(B[ma[38;5;39mta -b do run.do[30m(B[m[16D[38;5;26mata[30m(B[m [38;5;39m-b[30m(B[m [38;5;39mdo[30m(B[m [38;5;39m[4mrun.do[30m(B[m
+[30m(B[m[?2004l]0;stata /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kt[38;5;196mt[30m(B[m[38;5;240mail run.log[11D[30m(B[m[38;5;196ma[38;5;240mil run.log[10D[30m(B[m[38;5;196mi[38;5;240ml run.log[9D[30m(B[m[38;5;196ml[38;5;240m run.log[30m(B[m[38;5;26mtail[38;5;240m run.log[30m(B[m[38;5;26m [38;5;240mrun.log[30m(B[m [38;5;240mrun.log[30m(B[mrun.log[38;5;39m[4mrun.log[30m(B[m
+[30m(B[m[?2004l]0;tail /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m       log:  /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-drivi
+> ng/scripts/logs/2021.11.23-16.22.24.log.txt
+  log type:  text
+ closed on:  23 Nov 2021, 16:23:28
+-------------------------------------------------------------------------------
+
+. 
+. ** EOF
+. 
+end of do-file
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Ktail run.log[12D[38;5;26mtail[30m(B[m [38;5;39m[4mrun.log[30m(B[m[38;5;39m[4m-run.log[30m(B[m[38;5;39m-run.log[30m(B[m[38;5;39mnrun.log[30m(B[m[38;5;39m5run.log[30m(B[m[38;5;39m0run.log[30m(B[m[38;5;39m run.log[30m(B[m [38;5;39mrun.log[30m(B[m[7C
+[30m(B[m[?2004l]0;tail /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m
+. label var mean_y_Female "Mean"
+
+. label var var "Outcome variable"
+
+. 
+. * Output table
+. local title "OLS estimates of effect of driving eligibility on teenage drivin
+> g and mortality"
+
+. local headerlines "& \multicolumn{2}{c}{Full sample} & \multicolumn{2}{c}{Mal
+> e} & \multicolumn{2}{c}{Female}" "\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmid
+> rule(lr){6-7}"
+
+. local fn "Notes: This table replicates Table \ref{tab:rd_mortality} but uses 
+> an OLS estimator with a bandwidth of 24 months instead of an MSE-optimal esti
+> mator. Columns (1), (3), and (5) report means of the dependent variable one y
+> ear before reaching the minimum driving age (MDA). Columns (2), (4), and (6) 
+> report OLS estimates of \(\beta\) from equation (\ref{E - RD1}). Robust stand
+> ard errors are reported in parentheses.  `fn_asterisk' `fn_familyp'"
+
+. 
+. texsave using "$Driving/results/tables/rd_mortality_ols.tex", size(scriptsize
+> ) align(lCcCcCc) headerlines("`headerlines'") varlabels marker("tab:rd_mortal
+> ity_ols")  bold("A. " "B. ") title("`title'") hlines(1 8) footnote("`fn'", si
+> ze(scriptsize)) `texsave_settings'
+
+. 
+. 
+. ** EOF
+. 
+end of do-file
+
+. 
+. * End log
+. di "End date and time: $S_DATE $S_TIME"
+End date and time: 23 Nov 2021 16:23:28
+
+. log close
+      name:  <unnamed>
+       log:  /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-drivi
+> ng/scripts/logs/2021.11.23-16.22.24.log.txt
+  log type:  text
+ closed on:  23 Nov 2021, 16:23:28
+-------------------------------------------------------------------------------
+
+. 
+. ** EOF
+. 
+end of do-file
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kg[38;5;196mg[30m(B[m[38;5;240mit log[30m(B[m[38;5;196mi[38;5;240mt log[30m(B[m[38;5;196mt[38;5;240m log[30m(B[m[38;5;26mgit[38;5;240m log[30m(B[m[38;5;26m [38;5;240mlog[30m(B[m [38;5;240mlog[30m(B[ms[K[38;5;39m[4ms[30m(B[m[38;5;240mtatus[30m(B[m[38;5;39m[4mt[38;5;240m[24matus[30m(B[m[38;5;39mst[38;5;240matus[30m(B[m[38;5;39ma[38;5;240mtus[30m(B[m[38;5;39mt[38;5;240mus[30m(B[m[38;5;39mus[30m(B[m
+[30m(B[m[?2004l]0;git /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   processed/fhwa_8314.dta[m
+	[31mmodified:   processed/intermediate/licensed_drivers_1983to2014.dta[m
+	[31mmodified:   processed/intermediate/mdalaws_monthly8314.dta[m
+	[31mmodified:   results/figures/appendix_license_trends_ages1619.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_drowning.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_female.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_firearm.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_male.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_other.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_poisoning.pdf[m
+	[31mmodified:   results/figures/appendix_vmt_trends_ages1619.pdf[m
+	[31mmodified:   results/figures/placebo_cod_mva_all.pdf[m
+	[31mmodified:   results/figures/placebo_cod_mva_female.pdf[m
+	[31mmodified:   results/figures/placebo_cod_mva_male.pdf[m
+	[31mmodified:   results/figures/placebo_cod_sa_poisoning_all.pdf[m
+	[31mmodified:   results/figures/placebo_cod_sa_poisoning_female.pdf[m
+	[31mmodified:   results/figures/placebo_cod_sa_poisoning_male.pdf[m
+	[31mmodified:   results/figures/rd_any_ext_int_female.pdf[m
+	[31mmodified:   results/figures/rd_any_ext_int_male.pdf[m
+	[31mmodified:   results/figures/rd_any_male_female.pdf[m
+	[31mmodified:   results/figures/rd_extother_female.pdf[m
+	[31mmodified:   results/figures/rd_extother_male.pdf[m
+	[31mmodified:   results/figures/rd_license_male_female.pdf[m
+	[31mmodified:   results/figures/rd_mva_male_female.pdf[m
+	[31mmodified:   results/figures/rd_notenrolled.pdf[m
+	[31mmodified:   results/figures/rd_sa_drowning_female.pdf[m
+	[31mmodified:   results/figures/rd_sa_drowning_male.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_female.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_gas_female.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_gas_male.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_male.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_subst_female.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_subst_male.pdf[m
+	[31mmodified:   results/figures/rd_vehiclemiles_150.pdf[m
+	[31mmodified:   results/figures/rd_vehiclemiles_265.pdf[m
+	[31mmodified:   results/figures/rd_vmd150_male_female.pdf[m
+	[31mmodified:   results/figures/rd_work4weeks.pdf[m
+	[31mmodified:   results/figures/yearbins_cod_mva_female.pdf[m
+	[31mmodified:   results/figures/yearbins_cod_mva_male.pdf[m
+	[31mmodified:   results/figures/yearbins_cod_sa_poisoning_female.pdf[m
+	[31mmodified:   results/figures/yearbins_cod_sa_poisoning_male.pdf[m
+	[31mmodified:   results/intermediate/addhealth_rd.dta[m
+	[31mmodified:   results/intermediate/adjustedp.dta[m
+	[31mmodified:   results/intermediate/mortality_rd.dta[m
+	[31mmodified:   results/intermediate/mortality_rd_placebo.dta[m
+	[31mmodified:   results/intermediate/mortality_rd_robustness.dta[m
+	[31mmodified:   results/intermediate/mortality_rd_suicide_acct.dta[m
+	[31mmodified:   run.do[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mrecord.sh[m
+	[31mrun.log[m
+	[31mscripts/logs/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kg[38;5;196mg[30m(B[m[38;5;240mit status[9D[30m(B[m[38;5;196mi[38;5;240mt status[30m(B[m[38;5;196mt[38;5;240m status[30m(B[m[38;5;26mgit[38;5;240m status[30m(B[m[38;5;26m [38;5;240mstatus[30m(B[m [38;5;240mstatus[30m(B[md[K[38;5;240miff --staged[12D[30m(B[m[38;5;39m[4md[38;5;240m[24miff --staged[12D[30m(B[m[38;5;39m[4mi[38;5;240m[24mff --staged[11D[30m(B[m[38;5;39mdi[38;5;240mff --staged[11D[30m(B[m[38;5;39mf[38;5;240mf --staged[10D[30m(B[m[38;5;39mf[38;5;240m --staged[9D[30m(B[m[38;5;39m [38;5;240m--staged[30m(B[m [38;5;240m--staged[30m(B[mr[K[38;5;39m[4mr[30m(B[m[38;5;240mecord.sh [9D[30m(B[m[38;5;39m[4mu[30m(B[m[K[38;5;240mn.do [30m(B[m[38;5;39m[4mn[38;5;240m[24m.do [30m(B[m[38;5;39m[4m.[38;5;240m[24mdo [30m(B[m[38;5;39m[4md[38;5;240m[24mo [30m(B[m[38;5;39m[4mo[38;5;240m[24m [30m(B[m[K
+[30m(B[m[?2004l]0;git /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[?1h=[1mdiff --git a/run.do b/run.do[m[m
+[1mindex 7b6e43e..a7473a8 100644[m[m
+[1m--- a/run.do[m[m
+[1m+++ b/run.do[m[m
+[36m@@ -15,7 +15,7 @@[m[m
+ **********************[m[m
+ [m[m
+ * User must define this global macro to point to the folder path that includes this run.do script[m[m
+[31m-global Driving ""[m[m
+[32m+[m[32mglobal Driving "."[m[41m[7m^M[27m[m[m
+ [m[m
+ * Confirm that the global for the project root directory was defined[m[m
+ assert !missing("$Driving")[m[m
+[K[?1l>[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Ks[38;5;196ms[30m(B[m[38;5;240mtata -b do run.do[17D[30m(B[m[38;5;196mt[38;5;240mata -b do run.do[16D[30m(B[m[38;5;196ma[38;5;240mta -b do run.do[15D[30m(B[m[38;5;196mt[38;5;240ma -b do run.do[14D[30m(B[m[38;5;26mstat[38;5;240ma -b do run.do[14D[30m(B[m[38;5;26ma[38;5;240m -b do run.do[13D[30m(B[m[38;5;26m [38;5;240m-b do run.do[12D[30m(B[m [38;5;240m-b do run.do[12D[30m(B[m-[38;5;240mb do run.do[11D[30m(B[m[38;5;39m-[38;5;240mb do run.do[11D[30m(B[m[38;5;39me[30m(B[m[K[38;5;39m [30m(B[m d[38;5;39m[4md[30m(B[m[38;5;240mata/[30m(B[m[38;5;39m[4mo[30m(B[m[K[38;5;39mdo[30m(B[m[38;5;39m [30m(B[m r[38;5;39m[4mr[30m(B[m[38;5;240mecord.sh [9D[30m(B[m[38;5;39m[4mu[30m(B[m[K[38;5;240mn.do [30m(B[m[38;5;39m[4mn[38;5;240m[24m.do [30m(B[m[38;5;39m[4m.[38;5;240m[24mdo [30m(B[m[38;5;39m[4md[38;5;240m[24mo [30m(B[m[38;5;39m[4mo[38;5;240m[24m [30m(B[m[K
+[30m(B[m[?2004l]0;stata /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Ks[38;5;196ms[30m(B[m[38;5;240mtata -e do run.do[17D[30m(B[m[38;5;196mt[38;5;240mata -e do run.do[16D[30m(B[m[38;5;196ma[38;5;240mta -e do run.do[15D[30m(B[m[38;5;196mt[38;5;240ma -e do run.do[14D[30m(B[m[38;5;26mstat[38;5;240ma -e do run.do[14D[30m(B[m[38;5;26ma[38;5;240m -e do run.do[13D[30m(B[m[38;5;26m [38;5;240m-e do run.do[12D[30m(B[m [38;5;240m-e do run.do[12D[30m(B[m-[38;5;240me do run.do[11D[30m(B[m[38;5;39m-[38;5;240me do run.do[11D[30m(B[m[38;5;39me[38;5;240m do run.do[10D[30m(B[m[38;5;39m [38;5;240mdo run.do[9D[30m(B[m [38;5;240mdo run.do[9D[30m(B[md[38;5;240mo run.do[30m(B[m[38;5;39m[4md[38;5;240m[24mo run.do[30m(B[m[38;5;39m[4mi[30m(B[m[K[38;5;39mdi[30m(B[m[38;5;39ms[30m(B[m[38;5;39mp[30m(B[m[38;5;39ml[30m(B[m[38;5;39ma[30m(B[m[38;5;39my[30m(B[m[38;5;39m [30m(B[m 1[38;5;39m1[30m(B[m[38;5;39m2[30m(B[m[38;5;39m3[30m(B[m
+[30m(B[m[?2004l]0;stata /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kt[38;5;196mt[30m(B[m[38;5;240mail -n50 run.log[16D[30m(B[m[38;5;196ma[38;5;240mil -n50 run.log[15D[30m(B[m[38;5;196mi[38;5;240ml -n50 run.log[14D[30m(B[m[38;5;196ml[38;5;240m -n50 run.log[13D[30m(B[m[38;5;26mtail[38;5;240m -n50 run.log[13D[30m(B[m[38;5;26m [38;5;240m-n50 run.log[12D[30m(B[m [38;5;240m-n50 run.log[12D[30m(B[ms[K[38;5;39m[4ms[30m(B[m[38;5;240mtata.log[30m(B[m[38;5;39m[4mt[38;5;240m[24mata.log[30m(B[m[38;5;39m[4ma[38;5;240m[24mta.log[30m(B[m[38;5;39m[4mt[38;5;240m[24ma.log[30m(B[m[38;5;39m[4ma.log[30m(B[m
+[30m(B[m[?2004l]0;tail /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m               CEU MicroData
+
+Notes:
+      1. Stata is running in batch mode.
+      2. Unicode is supported; see help unicode_advice.
+      3. More than 2 billion observations are allowed; see help obs_advice.
+      4. Maximum number of variables is set to 5,000; see help set_maxvar.
+
+. display 123 
+123
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kg[38;5;240mit diff run.do[14D[30m(B[m[38;5;196mg[38;5;240mit diff run.do[14D[30m(B[m[38;5;196mi[38;5;240mt diff run.do[13D[30m(B[m[38;5;196mt[38;5;240m diff run.do[12D[30m(B[m[38;5;26mgit[38;5;240m diff run.do[12D[30m(B[m[38;5;26m [38;5;240mdiff run.do[11D[30m(B[m [38;5;240mdiff run.do[11D[30m(B[ma[K[38;5;39ma[30m(B[m[38;5;240mdd README.md[12D[30m(B[m[38;5;39md[38;5;240md README.md[11D[30m(B[m[38;5;39md[38;5;240m README.md[10D[30m(B[m[38;5;39m [38;5;240mREADME.md[9D[30m(B[m [38;5;240mREADME.md[9D[30m(B[mR[38;5;240mEADME.md[30m(B[m[38;5;39m[4mR[38;5;240m[24mEADME.md[30m(B[m[38;5;39m[4mru[30m(B[m[K[38;5;240mn.do [30m(B[m[38;5;39m[4mn[38;5;240m[24m.do [30m(B[m[38;5;39m[4m.[38;5;240m[24mdo [30m(B[m[38;5;39m[4ml[30m(B[m[K[38;5;240mog [30m(B[m[38;5;39m[4mo[38;5;240m[24mg [30m(B[m[38;5;39m[4mg[38;5;240m[24m [30m(B[m[K
+[30m(B[m[?2004l]0;git /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kg[38;5;240mit add run.log[14D[30m(B[m[38;5;196mg[38;5;240mit add run.log[14D[30m(B[m[38;5;196mi[38;5;240mt add run.log[13D[30m(B[m[38;5;196mt[38;5;240m add run.log[12D[30m(B[m[38;5;26mgit[38;5;240m add run.log[12D[30m(B[m[38;5;26m [38;5;240madd run.log[11D[30m(B[m [38;5;240madd run.log[11D[30m(B[mc[K[38;5;240mlone git@github.com:CEU-Economics-and-Business/ecbs-6233-reif…[62D[30m(B[m[38;5;39mc[38;5;240mlone git@github.com:CEU-Economics-and-Business/ecbs-6233-reif…[62D[30m(B[m[38;5;39mo[30m(B[m[K[38;5;240mmmit -m "Add some documentation"[32D[30m(B[m[38;5;39mo[30m(B[m[K[38;5;39mm[30m(B[m[38;5;39mi[30m(B[m[K[K[K[38;5;39mm[30m(B[m[38;5;240mmit -m "Add some documentation"[31D[30m(B[m[38;5;39mm[38;5;240mit -m "Add some documentation"[30D[30m(B[m[38;5;39mi[38;5;240mt -m "Add some documentation"[29D[30m(B[m[38;5;39mt[38;5;240m -m "Add some documentation"[28D[30m(B[m[38;5;39m [38;5;240m-m "Add some documentation"[27D[30m(B[m [38;5;240m-m "Add some documentation"[27D[30m(B[m-[38;5;240mm "Add some documentation"[26D[30m(B[m[38;5;39m-[38;5;240mm "Add some documentation"[26D[30m(B[m[38;5;39mm[38;5;240m "Add some documentation"[25D[30m(B[m[38;5;39m [38;5;240m"Add some documentation"[24D[30m(B[m [38;5;240m"Add some documentation"[24D[30m(B[m"[38;5;240mAdd some documentation"[23D[30m(B[m[38;5;196m"[38;5;240mAdd some documentation"[23D[30m(B[m[38;5;196mR[30m(B[m[K[38;5;240memove test recordings"[22D[30m(B[m[38;5;196mu[30m(B[m[K[38;5;240mn code"[30m(B[m[38;5;196mn[38;5;240m code"[30m(B[m[38;5;196m [38;5;240mcode"[30m(B[m[38;5;196mc[38;5;240mode"[30m(B[m[38;5;196mo[38;5;240mde"[30m(B[m[38;5;196md[38;5;240me"[30m(B[m[38;5;196me[38;5;240m"[30m(B[m[38;5;196m"[30m(B[m[10D[38;5;100m"Run code"[30m(B[m
+[30m(B[m[?2004l]0;git /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[main 81ca77a] Run code
+ 1 file changed, 4190 insertions(+)
+ create mode 100644 run.log
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kgit commit -m "Run code"[24D[38;5;26mgit[30m(B[m [38;5;39mcommit[30m(B[m [38;5;39m-m[30m(B[m [38;5;100m"Run code"[30m(B[m[20D[38;5;39madd ru[30m(B[mn[38;5;39m.l[30m(B[mo[38;5;100mg[30m(B[m[K [38;5;39m[4mrun.log[30m(B[m[K[K[K[38;5;39m[4md[30m(B[m[38;5;240mo [30m(B[m[38;5;39m[4mo[38;5;240m[24m [30m(B[m[K
+[30m(B[m[?2004l]0;git /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kg[38;5;240mit add run.do[13D[30m(B[m[38;5;196mg[38;5;240mit add run.do[13D[30m(B[m[38;5;196mi[38;5;240mt add run.do[12D[30m(B[m[38;5;196mt[38;5;240m add run.do[11D[30m(B[m[38;5;26mgit[38;5;240m add run.do[11D[30m(B[m[38;5;26m [38;5;240madd run.do[10D[30m(B[m [38;5;240madd run.do[10D[30m(B[mc[K[38;5;240mommit -m "Run code"[19D[30m(B[m[38;5;39mc[38;5;240mommit -m "Run code"[19D[30m(B[m[38;5;39mo[38;5;240mmmit -m "Run code"[18D[30m(B[m[38;5;39mm[38;5;240mmit -m "Run code"[17D[30m(B[m[38;5;39mm[38;5;240mit -m "Run code"[16D[30m(B[m[38;5;39mi[38;5;240mt -m "Run code"[15D[30m(B[m[38;5;39mt[38;5;240m -m "Run code"[14D[30m(B[m[38;5;39m [38;5;240m-m "Run code"[13D[30m(B[m [38;5;240m-m "Run code"[13D[30m(B[m-[38;5;240mm "Run code"[12D[30m(B[m[38;5;39m-[38;5;240mm "Run code"[12D[30m(B[m[38;5;39mm[38;5;240m "Run code"[11D[30m(B[m[38;5;39m [38;5;240m"Run code"[10D[30m(B[m [38;5;240m"Run code"[10D[30m(B[m"[38;5;240mRun code"[9D[30m(B[m[38;5;196m"[38;5;240mRun code"[9D[30m(B[m[38;5;196mE[30m(B[m[K[38;5;240mdit B1"[30m(B[m[38;5;196md[38;5;240mit B1"[30m(B[m[38;5;196mi[38;5;240mt B1"[30m(B[m[38;5;196mt[38;5;240m B1"[30m(B[m[38;5;196m [38;5;240mB1"[30m(B[m[38;5;196mf[30m(B[m[K[38;5;196mo[30m(B[m[38;5;196ml[30m(B[m[38;5;196md[30m(B[m[38;5;196me[30m(B[m[38;5;196mr[30m(B[m[38;5;196m [30m(B[m[38;5;196mu[30m(B[m[K[38;5;196mi[30m(B[m[38;5;196mn[30m(B[m[38;5;196m [30m(B[m[38;5;196mr[30m(B[m[38;5;196mu[30m(B[m[38;5;196mn[30m(B[m[38;5;196m.[30m(B[m[38;5;196md[30m(B[m[38;5;196mo[30m(B[m[38;5;196m"[30m(B[m[23D[38;5;100m"Edit folder in run.do"[30m(B[m
+[30m(B[m[?2004l]0;git /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[main 2def2a7] Edit folder in run.do
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kg[38;5;196mg[30m(B[m[38;5;240mit commit -m "Edit folder in run.do"[36D[30m(B[m[38;5;196mi[38;5;240mt commit -m "Edit folder in run.do"[35D[30m(B[m[38;5;196mt[38;5;240m commit -m "Edit folder in run.do"[34D[30m(B[m[38;5;26mgit[38;5;240m commit -m "Edit folder in run.do"[34D[30m(B[m[38;5;26m [38;5;240mcommit -m "Edit folder in run.do"[33D[30m(B[m [38;5;240mcommit -m "Edit folder in run.do"[33D[30m(B[ml[K[38;5;39m[4ml[30m(B[m[38;5;240mog[30m(B[m[38;5;39m[4mo[38;5;240m[24mg[30m(B[m[38;5;39mlo[38;5;240mg[30m(B[m[38;5;39mn[30m(B[m[38;5;39mg[30m(B[m[K[K[38;5;39mg[30m(B[m[38;5;39m [30m(B[m [38;5;240m--oneline[9D[30m(B[m-[38;5;240m-oneline[30m(B[m[38;5;39m-[38;5;240m-oneline[30m(B[m[38;5;39m-[38;5;240moneline[30m(B[m[38;5;39moneline[30m(B[m
+[30m(B[m[?2004l]0;git /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[?1h=[33m2def2a7[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m Edit folder in run.do[m
+[33m81ca77a[m Run code[m
+[33mcd44ced[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Updated README and LICENSE[m
+[33ma95bc30[m Initial commit[m
+[K[?1l>[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kg[38;5;196mg[30m(B[m[38;5;240mit log --oneline[16D[30m(B[m[38;5;196mi[38;5;240mt log --oneline[15D[30m(B[m[38;5;196mt[38;5;240m log --oneline[14D[30m(B[m[38;5;26mgit[38;5;240m log --oneline[14D[30m(B[m[38;5;26m [38;5;240mlog --oneline[13D[30m(B[m [38;5;240mlog --oneline[13D[30m(B[ms[K[38;5;240mtatus[30m(B[m[38;5;39m[4ms[38;5;240m[24mtatus[30m(B[m[38;5;39m[4mt[38;5;240m[24matus[30m(B[m[38;5;39m[4ma[38;5;240m[24mtus[30m(B[m[38;5;39m[4mt[38;5;240m[24mus[30m(B[m[38;5;39m[4mu[38;5;240m[24ms[30m(B[m[38;5;39mstatu[38;5;240ms[30m(B[m[38;5;39ms[30m(B[m
+[30m(B[m[?2004l]0;git /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mOn branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   processed/fhwa_8314.dta[m
+	[31mmodified:   processed/intermediate/licensed_drivers_1983to2014.dta[m
+	[31mmodified:   processed/intermediate/mdalaws_monthly8314.dta[m
+	[31mmodified:   results/figures/appendix_license_trends_ages1619.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_drowning.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_female.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_firearm.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_male.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_other.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_poisoning.pdf[m
+	[31mmodified:   results/figures/appendix_vmt_trends_ages1619.pdf[m
+	[31mmodified:   results/figures/placebo_cod_mva_all.pdf[m
+	[31mmodified:   results/figures/placebo_cod_mva_female.pdf[m
+	[31mmodified:   results/figures/placebo_cod_mva_male.pdf[m
+	[31mmodified:   results/figures/placebo_cod_sa_poisoning_all.pdf[m
+	[31mmodified:   results/figures/placebo_cod_sa_poisoning_female.pdf[m
+	[31mmodified:   results/figures/placebo_cod_sa_poisoning_male.pdf[m
+	[31mmodified:   results/figures/rd_any_ext_int_female.pdf[m
+	[31mmodified:   results/figures/rd_any_ext_int_male.pdf[m
+	[31mmodified:   results/figures/rd_any_male_female.pdf[m
+	[31mmodified:   results/figures/rd_extother_female.pdf[m
+	[31mmodified:   results/figures/rd_extother_male.pdf[m
+	[31mmodified:   results/figures/rd_license_male_female.pdf[m
+	[31mmodified:   results/figures/rd_mva_male_female.pdf[m
+	[31mmodified:   results/figures/rd_notenrolled.pdf[m
+	[31mmodified:   results/figures/rd_sa_drowning_female.pdf[m
+	[31mmodified:   results/figures/rd_sa_drowning_male.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_female.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_gas_female.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_gas_male.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_male.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_subst_female.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_subst_male.pdf[m
+	[31mmodified:   results/figures/rd_vehiclemiles_150.pdf[m
+	[31mmodified:   results/figures/rd_vehiclemiles_265.pdf[m
+	[31mmodified:   results/figures/rd_vmd150_male_female.pdf[m
+	[31mmodified:   results/figures/rd_work4weeks.pdf[m
+	[31mmodified:   results/figures/yearbins_cod_mva_female.pdf[m
+	[31mmodified:   results/figures/yearbins_cod_mva_male.pdf[m
+	[31mmodified:   results/figures/yearbins_cod_sa_poisoning_female.pdf[m
+	[31mmodified:   results/figures/yearbins_cod_sa_poisoning_male.pdf[m
+	[31mmodified:   results/intermediate/addhealth_rd.dta[m
+	[31mmodified:   results/intermediate/adjustedp.dta[m
+	[31mmodified:   results/intermediate/mortality_rd.dta[m
+	[31mmodified:   results/intermediate/mortality_rd_placebo.dta[m
+	[31mmodified:   results/intermediate/mortality_rd_robustness.dta[m
+	[31mmodified:   results/intermediate/mortality_rd_suicide_acct.dta[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mMakefile[m
+	[31mrecord.sh[m
+	[31mscripts/logs/[m
+	[31mstata.log[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Km[38;5;196mm[30m(B[m[38;5;240mkdir repro[10D[30m(B[m[38;5;196ma[30m(B[m[K[38;5;240mke[30m(B[m[38;5;196mk[38;5;240me[30m(B[m[38;5;196me[30m(B[m[38;5;26mmake[30m(B[m
+[30m(B[m[?2004l]0;make /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mmake: *** No rule to make target `1_import_data.do', needed by `processed/intermediate/licensed_drivers_1983to2014.dta'.  Stop.
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kl[38;5;196ml[30m(B[m[38;5;240ms -hal run.do[13D[30m(B[m[38;5;196ms[38;5;240m -hal run.do[12D[30m(B[m[38;5;26mls[38;5;240m -hal run.do[12D[30m(B[m[38;5;26m [38;5;240m-hal run.do[11D[30m(B[m [38;5;240m-hal run.do[11D[30m(B[m-[38;5;240mhal run.do[10D[30m(B[m[38;5;39m-[38;5;240mhal run.do[10D[30m(B[m[38;5;39mh[38;5;240mal run.do[9D[30m(B[m[38;5;39ma[38;5;240ml run.do[30m(B[m[38;5;39ml[38;5;240m run.do[30m(B[m[38;5;39m [38;5;240mrun.do[30m(B[m [38;5;240mrun.do[30m(B[m[K
+[30m(B[m[?2004l]0;ls /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mtotal 896
+drwxr-xr-x  17 koren  staff   544B Nov 23 16:39 [34m.[39;49m[0m
+drwxr-xr-x   8 koren  staff   256B Nov 23 16:12 [34m..[39;49m[0m
+drwxr-xr-x  13 koren  staff   416B Nov 23 16:43 [34m.git[39;49m[0m
+-rw-r--r--   1 koren  staff    55B Nov 23 16:09 .gitignore
+-rw-r--r--   1 koren  staff    15K Nov 23 16:09 LICENSE.txt
+-rw-r--r--   1 koren  staff   102B Nov 23 16:43 Makefile
+-rw-r--r--   1 koren  staff    41K Nov 23 16:09 README.docx
+-rw-r--r--   1 koren  staff   4.6K Nov 23 16:09 README.md
+-rw-r--r--   1 koren  staff   225K Nov 23 16:09 README.pdf
+drwxr-xr-x  11 koren  staff   352B Nov 23 16:09 [34mdata[39;49m[0m
+drwxr-xr-x   4 koren  staff   128B Nov 23 16:28 [34mprocessed[39;49m[0m
+-rw-r--r--   1 koren  staff   470B Nov 23 16:12 record.sh
+drwxr-xr-x   5 koren  staff   160B Nov 23 16:09 [34mresults[39;49m[0m
+-rw-r--r--   1 koren  staff   2.2K Nov 23 16:21 run.do
+-rw-r--r--   1 koren  staff   132K Nov 23 16:29 run.log
+drwxr-xr-x  11 koren  staff   352B Nov 23 16:22 [34mscripts[39;49m[0m
+-rw-r--r--   1 koren  staff   923B Nov 23 16:31 stata.log
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Km[38;5;196mm[30m(B[m[38;5;240make[30m(B[m[38;5;196ma[38;5;240mke[30m(B[m[38;5;196mk[38;5;240me[30m(B[m[38;5;196me[30m(B[m[38;5;26mmake[30m(B[m
+[30m(B[m[?2004l]0;make /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mmake: `processed/intermediate/licensed_drivers_1983to2014.dta' is up to date.
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Km[38;5;196mm[30m(B[m[38;5;240make[30m(B[m[38;5;196mk[30m(B[m[K[38;5;240mdir repro[9D[30m(B[m[K[38;5;196ma[30m(B[m[38;5;240mke[30m(B[m[38;5;196mk[38;5;240me[30m(B[m[K[K[Kl[38;5;196ml[30m(B[m[38;5;240ms -hal[30m(B[m[38;5;196ms[38;5;240m -hal[30m(B[m[38;5;26mls[38;5;240m -hal[30m(B[m[38;5;26m [38;5;240m-hal[30m(B[m [38;5;240m-hal[30m(B[m-hal[38;5;39m-hal[30m(B[m
+[30m(B[m[?2004l]0;ls /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mtotal 896
+drwxr-xr-x  17 koren  staff   544B Nov 23 16:39 [34m.[39;49m[0m
+drwxr-xr-x   8 koren  staff   256B Nov 23 16:12 [34m..[39;49m[0m
+drwxr-xr-x  13 koren  staff   416B Nov 23 16:45 [34m.git[39;49m[0m
+-rw-r--r--   1 koren  staff    55B Nov 23 16:09 .gitignore
+-rw-r--r--   1 koren  staff    15K Nov 23 16:09 LICENSE.txt
+-rw-r--r--   1 koren  staff   118B Nov 23 16:44 Makefile
+-rw-r--r--   1 koren  staff    41K Nov 23 16:09 README.docx
+-rw-r--r--   1 koren  staff   4.6K Nov 23 16:09 README.md
+-rw-r--r--   1 koren  staff   225K Nov 23 16:09 README.pdf
+drwxr-xr-x  11 koren  staff   352B Nov 23 16:09 [34mdata[39;49m[0m
+drwxr-xr-x   4 koren  staff   128B Nov 23 16:28 [34mprocessed[39;49m[0m
+-rw-r--r--   1 koren  staff   470B Nov 23 16:12 record.sh
+drwxr-xr-x   5 koren  staff   160B Nov 23 16:09 [34mresults[39;49m[0m
+-rw-r--r--   1 koren  staff   2.2K Nov 23 16:21 run.do
+-rw-r--r--   1 koren  staff   132K Nov 23 16:29 run.log
+drwxr-xr-x  11 koren  staff   352B Nov 23 16:22 [34mscripts[39;49m[0m
+-rw-r--r--   1 koren  staff   923B Nov 23 16:31 stata.log
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kls -hal[38;5;26mls[30m(B[m [38;5;39m-hal[30m(B[m[C[38;5;39m [30m(B[m[38;5;240mrun.do[30m(B[m [38;5;240mrun.do[30m(B[ms[K[38;5;39m[4ms[30m(B[m[38;5;240mcripts/[30m(B[m[38;5;39m[4mc[38;5;240m[24mripts/[30m(B[m[38;5;39m[4mripts/[30m(B[m
+[30m(B[m[?2004l]0;ls /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mtotal 240
+drwxr-xr-x  11 koren  staff   352B Nov 23 16:22 [34m.[39;49m[0m
+drwxr-xr-x  17 koren  staff   544B Nov 23 16:39 [34m..[39;49m[0m
+-rw-r--r--   1 koren  staff    10K Nov 23 16:45 1_import_data.do
+-rw-r--r--   1 koren  staff    15K Nov 23 16:09 2_clean_data.do
+-rw-r--r--   1 koren  staff   6.0K Nov 23 16:09 3_combine_data.do
+-rw-r--r--   1 koren  staff    24K Nov 23 16:09 4_analysis.do
+-rw-r--r--   1 koren  staff    13K Nov 23 16:09 5_supporting_analysis.do
+-rw-r--r--   1 koren  staff    38K Nov 23 16:09 6_tables.do
+drwxr-xr-x   3 koren  staff    96B Nov 23 16:09 [34mlibraries[39;49m[0m
+drwxr-xr-x   4 koren  staff   128B Nov 23 16:28 [34mlogs[39;49m[0m
+drwxr-xr-x   3 koren  staff    96B Nov 23 16:09 [34mprograms[39;49m[0m
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kls -hal scripts/[16D[38;5;26mls[30m(B[m [38;5;39m-hal[30m(B[m [38;5;39m[4mscripts/[30m(B[m[38;5;39m[4m/[30m(B[m[K[38;5;39mscript/[30m(B[m[38;5;39m/[30m(B[m[K[38;5;39m/[30m(B[m[K[38;5;39m/[30m(B[m[K[38;5;39m/[30m(B[m[K[38;5;39m/[30m(B[m[K[38;5;39m/[30m(B[m[K[38;5;39m[4m/[30m(B[m[38;5;39m[4mp/[30m(B[m[38;5;39mp/[30m(B[m[38;5;39mr/[30m(B[m[38;5;39mo/[30m(B[m[38;5;39mc/[30m(B[m[C[38;5;39messed/[30m(B[m[10D[38;5;39m[4mprocessed/[30m(B[m[38;5;240mfhwa_8314.dta [14D[30m(B[m[38;5;39m[4mi[30m(B[m[K[38;5;240mntermediate/[12D[30m(B[m[38;5;39m[4mn[38;5;240m[24mtermediate/[11D[30m(B[m[38;5;39m[4mt[38;5;240m[24mermediate/[10D[30m(B[m[38;5;39m[4me[38;5;240m[24mrmediate/[9D[30m(B[m[38;5;39m[4mrmediate/[30m(B[m
+[30m(B[m[?2004l]0;ls /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mtotal 264
+drwxr-xr-x  4 koren  staff   128B Nov 23 16:28 [34m.[39;49m[0m
+drwxr-xr-x  4 koren  staff   128B Nov 23 16:28 [34m..[39;49m[0m
+-rw-r--r--  1 koren  staff   4.7K Nov 23 16:28 licensed_drivers_1983to2014.dta
+-rw-r--r--  1 koren  staff   121K Nov 23 16:28 mdalaws_monthly8314.dta
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Km[38;5;196mm[30m(B[m[38;5;240make[30m(B[m[38;5;196ma[38;5;240mke[30m(B[m[38;5;196mk[38;5;240me[30m(B[m[38;5;196me[30m(B[m[38;5;26mmake[30m(B[m
+[30m(B[m[?2004l]0;make /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mstata -b do scripts/1_import_data.do
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Km[38;5;196mm[30m(B[m[38;5;240make[30m(B[m[38;5;196ma[38;5;240mke[30m(B[m[38;5;196mk[38;5;240me[30m(B[m[38;5;196me[30m(B[m[38;5;26mmake[30m(B[m
+[30m(B[m[?2004l]0;make /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mstata -b do scripts/1_import_data.do
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kl[38;5;196ml[30m(B[m[38;5;240ms -hal processed/intermediate/[30D[30m(B[m[38;5;196ms[38;5;240m -hal processed/intermediate/[29D[30m(B[m[38;5;26mls[38;5;240m -hal processed/intermediate/[29D[30m(B[m[38;5;26m [38;5;240m-hal processed/intermediate/[28D[30m(B[m [38;5;240m-hal processed/intermediate/[28D[30m(B[m-[38;5;240mhal processed/intermediate/[27D[30m(B[m[38;5;39m-[38;5;240mhal processed/intermediate/[27D[30m(B[m[38;5;39mh[38;5;240mal processed/intermediate/[26D[30m(B[m[38;5;39ma[38;5;240ml processed/intermediate/[25D[30m(B[m[38;5;39ml[38;5;240m processed/intermediate/[24D[30m(B[m[38;5;39m [38;5;240mprocessed/intermediate/[23D[30m(B[m [38;5;240mprocessed/intermediate/[23D[30m(B[m*[K[38;5;37m*[30m(B[m[38;5;240m.do[30m(B[m[38;5;37m.[38;5;240mdo[30m(B[m[38;5;39m.[38;5;240mdo[30m(B[m[38;5;39ml[30m(B[m[K[38;5;240mog [30m(B[m[38;5;39mo[38;5;240mg [30m(B[m[38;5;39mg[38;5;240m [30m(B[m[K
+[30m(B[m[?2004l]0;ls /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m-rw-r--r--  1 koren  staff   1.2K Nov 23 16:46 1_import_data.log
+-rw-r--r--  1 koren  staff   132K Nov 23 16:29 run.log
+-rw-r--r--  1 koren  staff   923B Nov 23 16:31 stata.log
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kt[38;5;196mt[30m(B[m[38;5;240mail stata.log[13D[30m(B[m[38;5;196ma[38;5;240mil stata.log[12D[30m(B[m[38;5;196mi[38;5;240ml stata.log[11D[30m(B[m[38;5;196ml[38;5;240m stata.log[10D[30m(B[m[38;5;26mtail[38;5;240m stata.log[10D[30m(B[m[38;5;26m [38;5;240mstata.log[9D[30m(B[m [38;5;240mstata.log[9D[30m(B[m1[K[38;5;39m[4m1[30m(B[m[38;5;240m_import_data.log [17D[30m(B[m[38;5;39m[4m_[38;5;240m[24mimport_data.log [16D[30m(B[m[38;5;39m[4mimport_data.log [30m(B[m[18D[38;5;39m1_import_data.log[30m(B[m 
+[30m(B[m[?2004l]0;tail /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m. * PURPOSE: imports the raw data and saves it in Stata readable format
+. ************
+. 
+. * Preamble (unnecessary when executing run.do)
+. do "$Driving/scripts/programs/_config.do"
+file /scripts/programs/_config.do not found
+r(601);
+
+end of do-file
+r(601);
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [K
+1_import_data.log  Makefile     README.md   results/  scripts/ 
+data/              processed/   README.pdf  run.do    stata.log
+LICENSE.txt        README.docx  record.sh   run.log   [A[A[A
+[K
+[K
+[K[A[A[A[50Ctail 1_import_data.log[22D[38;5;26mtail[30m(B[m [38;5;39m[4m1_import_data.log[30m(B[m[22D[38;5;26mls -[30m(B[mh[38;5;39m[4mal *.log[30m(B[m[K[11D [38;5;39m-hal[30m(B[m [38;5;37m*[38;5;39m.log[30m(B[m[13D[38;5;26mma[30m(B[mk[38;5;39me[30m(B[m[K[38;5;26mke[30m(B[m
+[30m(B[m[?2004l]0;make /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mstata -b do scripts/1_import_data.do
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Km[38;5;196mm[30m(B[m[38;5;240make[30m(B[m[38;5;196ma[38;5;240mke[30m(B[m[38;5;196mk[38;5;240me[30m(B[m[38;5;196me[30m(B[m[38;5;26mmake[30m(B[m
+[30m(B[m[?2004l]0;make /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mmake: `processed/intermediate/licensed_drivers_1983to2014.dta' is up to date.
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kg[38;5;240mit status[9D[30m(B[m[38;5;196mg[38;5;240mit status[9D[30m(B[m[38;5;196mi[38;5;240mt status[30m(B[m[38;5;196mt[38;5;240m status[30m(B[m[38;5;26mgit[38;5;240m status[30m(B[m[38;5;26m [38;5;240mstatus[30m(B[m [38;5;240mstatus[30m(B[ms[38;5;240mtatus[30m(B[m[38;5;39m[4ms[38;5;240m[24mtatus[30m(B[m[38;5;39m[4mt[38;5;240m[24matus[30m(B[m[38;5;39m[4ma[38;5;240m[24mtus[30m(B[m[38;5;39m[4mt[38;5;240m[24mus[30m(B[m[38;5;39m[4mus[30m(B[m[38;5;39mstatus[30m(B[m
+[30m(B[m[?2004l]0;git /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mOn branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   processed/fhwa_8314.dta[m
+	[31mmodified:   processed/intermediate/licensed_drivers_1983to2014.dta[m
+	[31mmodified:   processed/intermediate/mdalaws_monthly8314.dta[m
+	[31mmodified:   results/figures/appendix_license_trends_ages1619.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_drowning.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_female.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_firearm.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_male.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_other.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_poisoning.pdf[m
+	[31mmodified:   results/figures/appendix_vmt_trends_ages1619.pdf[m
+	[31mmodified:   results/figures/placebo_cod_mva_all.pdf[m
+	[31mmodified:   results/figures/placebo_cod_mva_female.pdf[m
+	[31mmodified:   results/figures/placebo_cod_mva_male.pdf[m
+	[31mmodified:   results/figures/placebo_cod_sa_poisoning_all.pdf[m
+	[31mmodified:   results/figures/placebo_cod_sa_poisoning_female.pdf[m
+	[31mmodified:   results/figures/placebo_cod_sa_poisoning_male.pdf[m
+	[31mmodified:   results/figures/rd_any_ext_int_female.pdf[m
+	[31mmodified:   results/figures/rd_any_ext_int_male.pdf[m
+	[31mmodified:   results/figures/rd_any_male_female.pdf[m
+	[31mmodified:   results/figures/rd_extother_female.pdf[m
+	[31mmodified:   results/figures/rd_extother_male.pdf[m
+	[31mmodified:   results/figures/rd_license_male_female.pdf[m
+	[31mmodified:   results/figures/rd_mva_male_female.pdf[m
+	[31mmodified:   results/figures/rd_notenrolled.pdf[m
+	[31mmodified:   results/figures/rd_sa_drowning_female.pdf[m
+	[31mmodified:   results/figures/rd_sa_drowning_male.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_female.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_gas_female.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_gas_male.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_male.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_subst_female.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_subst_male.pdf[m
+	[31mmodified:   results/figures/rd_vehiclemiles_150.pdf[m
+	[31mmodified:   results/figures/rd_vehiclemiles_265.pdf[m
+	[31mmodified:   results/figures/rd_vmd150_male_female.pdf[m
+	[31mmodified:   results/figures/rd_work4weeks.pdf[m
+	[31mmodified:   results/figures/yearbins_cod_mva_female.pdf[m
+	[31mmodified:   results/figures/yearbins_cod_mva_male.pdf[m
+	[31mmodified:   results/figures/yearbins_cod_sa_poisoning_female.pdf[m
+	[31mmodified:   results/figures/yearbins_cod_sa_poisoning_male.pdf[m
+	[31mmodified:   results/intermediate/addhealth_rd.dta[m
+	[31mmodified:   results/intermediate/adjustedp.dta[m
+	[31mmodified:   results/intermediate/mortality_rd.dta[m
+	[31mmodified:   results/intermediate/mortality_rd_placebo.dta[m
+	[31mmodified:   results/intermediate/mortality_rd_robustness.dta[m
+	[31mmodified:   results/intermediate/mortality_rd_suicide_acct.dta[m
+	[31mmodified:   scripts/1_import_data.do[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m1_import_data.log[m
+	[31mMakefile[m
+	[31mrecord.sh[m
+	[31mscripts/logs/[m
+	[31mstata.log[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kg[38;5;196mg[30m(B[m[38;5;240mit status[9D[30m(B[m[38;5;196mi[38;5;240mt status[30m(B[m[38;5;196mt[38;5;240m status[30m(B[m[38;5;26mgit[38;5;240m status[30m(B[m[38;5;26m [38;5;240mstatus[30m(B[m [38;5;240mstatus[30m(B[ma[K[38;5;240mdd run.do[9D[30m(B[m[38;5;39ma[38;5;240mdd run.do[9D[30m(B[m[38;5;39md[38;5;240md run.do[30m(B[m[38;5;39md[38;5;240m run.do[30m(B[m[38;5;39m [38;5;240mrun.do[30m(B[m [38;5;240mrun.do[30m(B[mM[K[38;5;240makefile scripts/6_tables.do[27D[30m(B[m[38;5;39m[4mM[38;5;240m[24makefile scripts/6_tables.do[27D[30m(B[m[38;5;39m[4ma[38;5;240m[24mkefile scripts/6_tables.do[26D[30m(B[m[38;5;39m[4mk[38;5;240m[24mefile scripts/6_tables.do[25D[30m(B[m[38;5;39m[4me[38;5;240m[24mfile scripts/6_tables.do[24D[30m(B[m[38;5;39m[4mf[38;5;240m[24mile scripts/6_tables.do[23D[30m(B[m[38;5;39m[4mi[38;5;240m[24mle scripts/6_tables.do[22D[30m(B[m[38;5;39m[4ml[38;5;240m[24me scripts/6_tables.do[21D[30m(B[m[38;5;39m[4me[38;5;240m[24m scripts/6_tables.do[20D[30m(B[m[K
+[30m(B[m[?2004l]0;git /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kg[38;5;196mg[30m(B[m[38;5;240mit add Makefile[15D[30m(B[m[38;5;196mi[38;5;240mt add Makefile[14D[30m(B[m[38;5;196mt[38;5;240m add Makefile[13D[30m(B[m[38;5;26mgit[38;5;240m add Makefile[13D[30m(B[m[38;5;26m [38;5;240madd Makefile[12D[30m(B[m [38;5;240madd Makefile[12D[30m(B[ma[38;5;240mdd Makefile[11D[30m(B[m[38;5;39ma[38;5;240mdd Makefile[11D[30m(B[m[38;5;39md[38;5;240md Makefile[10D[30m(B[m[38;5;39md[38;5;240m Makefile[9D[30m(B[m[38;5;39m [38;5;240mMakefile[30m(B[m [38;5;240mMakefile[30m(B[m1[K[38;5;39m[4m1[30m(B[m[38;5;240m_import_data.log [17D[30m(B[m[38;5;39m[4m_import_data.log [30m(B[m[18D[38;5;39m1_import_data.log[30m(B[m 
+[30m(B[m[?2004l]0;git /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kg[38;5;196mg[30m(B[m[38;5;240mit add 1_import_data.log[24D[30m(B[m[38;5;196mi[38;5;240mt add 1_import_data.log[23D[30m(B[m[38;5;196mt[38;5;240m add 1_import_data.log[22D[30m(B[m[38;5;26mgit[38;5;240m add 1_import_data.log[22D[30m(B[m[38;5;26m [38;5;240madd 1_import_data.log[21D[30m(B[m [38;5;240madd 1_import_data.log[21D[30m(B[md[K[38;5;39m[4md[30m(B[m[38;5;240miff run.do[10D[30m(B[m[38;5;39m[4mi[38;5;240m[24mff run.do[9D[30m(B[m[38;5;39mdi[38;5;240mff run.do[9D[30m(B[m[38;5;39mf[38;5;240mf run.do[30m(B[m[38;5;39mf[38;5;240m run.do[30m(B[m[38;5;39m [38;5;240mrun.do[30m(B[m [38;5;240mrun.do[30m(B[mscripts/1_import_data.do]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [38;5;26mgit[30m(B[m [38;5;39mdiff[30m(B[m scripts/1_import_data.do[K[24D[38;5;39m[4mscripts/1_import_data.do[30m(B[m[38;5;240m [30m(B[m[K
+[30m(B[m[?2004l]0;git /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[?1h=[1mdiff --git a/scripts/1_import_data.do b/scripts/1_import_data.do[m[m
+[1mindex 0e34080..caaa44a 100644[m[m
+[1m--- a/scripts/1_import_data.do[m[m
+[1m+++ b/scripts/1_import_data.do[m[m
+[36m@@ -3,6 +3,7 @@[m[m
+ * PURPOSE: imports the raw data and saves it in Stata readable format[m[m
+ ************[m[m
+ [m[m
+[32m+[m[32mglobal Driving "."[m[41m[7m^M[27m[m[m
+ * Preamble (unnecessary when executing run.do)[m[m
+ do "$Driving/scripts/programs/_config.do"[m[m
+ [m[m
+[36m@@ -233,5 +234,6 @@[m [msave "$Driving/processed/intermediate/licensed_drivers_1983to2014.dta", replace[m[m
+ [m[m
+ }[m[m
+ [m[m
+[32m+[m[32m* add some random comments[m[41m[7m^M[27m[m[m
+ [m[m
+ ** EOF[m[m
+[K[?1l>[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kg[38;5;196mg[30m(B[m[38;5;240mit diff scripts/1_import_data.do[32D[30m(B[m[38;5;196mi[38;5;240mt diff scripts/1_import_data.do[31D[30m(B[m[38;5;196mt[38;5;240m diff scripts/1_import_data.do[30D[30m(B[m[38;5;26mgit[38;5;240m diff scripts/1_import_data.do[30D[30m(B[m[38;5;26m [38;5;240mdiff scripts/1_import_data.do[29D[30m(B[m [38;5;240mdiff scripts/1_import_data.do[29D[30m(B[ma[K[38;5;240mdd 1_import_data.log[20D[30m(B[m[38;5;39ma[38;5;240mdd 1_import_data.log[20D[30m(B[m[38;5;39md[38;5;240md 1_import_data.log[19D[30m(B[m[38;5;39md[38;5;240m 1_import_data.log[18D[30m(B[m[38;5;39m [38;5;240m1_import_data.log[17D[30m(B[m [38;5;240m1_import_data.log[17D[30m(B[ms[K[38;5;39m[4ms[30m(B[m[38;5;240myllabus-template.*[18D[30m(B[m[38;5;39m[4mc[30m(B[m[K[38;5;240mripts/[30m(B[m[38;5;39m[4mripts/[30m(B[m[38;5;39m[4m1[30m(B[m[38;5;240m_import_data.do [16D[30m(B[m[38;5;39m[4m_import_data.do [30m(B[m[25D[38;5;39mscripts/1_import_data.do[30m(B[m 
+[30m(B[m[?2004l]0;git /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kg[38;5;196mg[30m(B[m[38;5;240mit add scripts/1_import_data.do[31D[30m(B[m[38;5;196mi[38;5;240mt add scripts/1_import_data.do[30D[30m(B[m[38;5;196mt[38;5;240m add scripts/1_import_data.do[29D[30m(B[m[38;5;26mgit[38;5;240m add scripts/1_import_data.do[29D[30m(B[m[38;5;26m [38;5;240madd scripts/1_import_data.do[28D[30m(B[m [38;5;240madd scripts/1_import_data.do[28D[30m(B[ms[K[38;5;240mtatus[30m(B[m[38;5;39m[4ms[38;5;240m[24mtatus[30m(B[m[38;5;39m[4mt[38;5;240m[24matus[30m(B[m[38;5;39m[4ma[38;5;240m[24mtus[30m(B[m[38;5;39m[4mt[38;5;240m[24mus[30m(B[m[38;5;39m[4mus[30m(B[m[38;5;39mstatus[30m(B[m
+[30m(B[m[?2004l]0;git /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mOn branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   1_import_data.log[m
+	[32mnew file:   Makefile[m
+	[32mmodified:   scripts/1_import_data.do[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   processed/fhwa_8314.dta[m
+	[31mmodified:   processed/intermediate/licensed_drivers_1983to2014.dta[m
+	[31mmodified:   processed/intermediate/mdalaws_monthly8314.dta[m
+	[31mmodified:   results/figures/appendix_license_trends_ages1619.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_drowning.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_female.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_firearm.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_male.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_other.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_poisoning.pdf[m
+	[31mmodified:   results/figures/appendix_vmt_trends_ages1619.pdf[m
+	[31mmodified:   results/figures/placebo_cod_mva_all.pdf[m
+	[31mmodified:   results/figures/placebo_cod_mva_female.pdf[m
+	[31mmodified:   results/figures/placebo_cod_mva_male.pdf[m
+	[31mmodified:   results/figures/placebo_cod_sa_poisoning_all.pdf[m
+	[31mmodified:   results/figures/placebo_cod_sa_poisoning_female.pdf[m
+	[31mmodified:   results/figures/placebo_cod_sa_poisoning_male.pdf[m
+	[31mmodified:   results/figures/rd_any_ext_int_female.pdf[m
+	[31mmodified:   results/figures/rd_any_ext_int_male.pdf[m
+	[31mmodified:   results/figures/rd_any_male_female.pdf[m
+	[31mmodified:   results/figures/rd_extother_female.pdf[m
+	[31mmodified:   results/figures/rd_extother_male.pdf[m
+	[31mmodified:   results/figures/rd_license_male_female.pdf[m
+	[31mmodified:   results/figures/rd_mva_male_female.pdf[m
+	[31mmodified:   results/figures/rd_notenrolled.pdf[m
+	[31mmodified:   results/figures/rd_sa_drowning_female.pdf[m
+	[31mmodified:   results/figures/rd_sa_drowning_male.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_female.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_gas_female.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_gas_male.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_male.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_subst_female.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_subst_male.pdf[m
+	[31mmodified:   results/figures/rd_vehiclemiles_150.pdf[m
+	[31mmodified:   results/figures/rd_vehiclemiles_265.pdf[m
+	[31mmodified:   results/figures/rd_vmd150_male_female.pdf[m
+	[31mmodified:   results/figures/rd_work4weeks.pdf[m
+	[31mmodified:   results/figures/yearbins_cod_mva_female.pdf[m
+	[31mmodified:   results/figures/yearbins_cod_mva_male.pdf[m
+	[31mmodified:   results/figures/yearbins_cod_sa_poisoning_female.pdf[m
+	[31mmodified:   results/figures/yearbins_cod_sa_poisoning_male.pdf[m
+	[31mmodified:   results/intermediate/addhealth_rd.dta[m
+	[31mmodified:   results/intermediate/adjustedp.dta[m
+	[31mmodified:   results/intermediate/mortality_rd.dta[m
+	[31mmodified:   results/intermediate/mortality_rd_placebo.dta[m
+	[31mmodified:   results/intermediate/mortality_rd_robustness.dta[m
+	[31mmodified:   results/intermediate/mortality_rd_suicide_acct.dta[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mrecord.sh[m
+	[31mscripts/logs/[m
+	[31mstata.log[m
+
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kg[38;5;196mg[30m(B[m[38;5;240mit status[9D[30m(B[m[38;5;196mi[38;5;240mt status[30m(B[m[38;5;196mt[38;5;240m status[30m(B[m[38;5;26mgit[38;5;240m status[30m(B[m[38;5;26m [38;5;240mstatus[30m(B[m [38;5;240mstatus[30m(B[mc[K[38;5;240mommit -m "Edit folder in run.do"[32D[30m(B[m[38;5;39mc[38;5;240mommit -m "Edit folder in run.do"[32D[30m(B[m[38;5;39mo[38;5;240mmmit -m "Edit folder in run.do"[31D[30m(B[m[38;5;39mm[38;5;240mmit -m "Edit folder in run.do"[30D[30m(B[m[38;5;39mm[38;5;240mit -m "Edit folder in run.do"[29D[30m(B[m[38;5;39mi[38;5;240mt -m "Edit folder in run.do"[28D[30m(B[m[38;5;39mt[38;5;240m -m "Edit folder in run.do"[27D[30m(B[m[38;5;39m [38;5;240m-m "Edit folder in run.do"[26D[30m(B[m [38;5;240m-m "Edit folder in run.do"[26D[30m(B[m-[38;5;240mm "Edit folder in run.do"[25D[30m(B[m[38;5;39m-[38;5;240mm "Edit folder in run.do"[25D[30m(B[m[38;5;39mm[38;5;240m "Edit folder in run.do"[24D[30m(B[m[38;5;39m [38;5;240m"Edit folder in run.do"[23D[30m(B[m [38;5;240m"Edit folder in run.do"[23D[30m(B[m"[38;5;240mEdit folder in run.do"[22D[30m(B[m[38;5;196m"[38;5;240mEdit folder in run.do"[22D[30m(B[m[38;5;196mR[30m(B[m[K[38;5;240mun code"[30m(B[m[38;5;196mi[30m(B[m[K[K[38;5;196mu[30m(B[m[38;5;240mn code"[30m(B[m[38;5;196mn[38;5;240m code"[30m(B[m[38;5;196m [38;5;240mcode"[30m(B[m[38;5;196ms[30m(B[m[K[38;5;196mc[30m(B[m[38;5;196mr[30m(B[m[38;5;196mi[30m(B[m[38;5;196mp[30m(B[m[38;5;196mt[30m(B[m[38;5;196m [30m(B[m[38;5;196m1[30m(B[m[38;5;196m [30m(B[m[38;5;196mw[30m(B[m[38;5;196mi[30m(B[m[38;5;196mt[30m(B[m[38;5;196mh[30m(B[m[38;5;196m [30m(B[m[38;5;196mM[30m(B[m[38;5;196ma[30m(B[m[38;5;196mk[30m(B[m[38;5;196me[30m(B[m[38;5;196m"[30m(B[m[24D[38;5;100m"Run script 1 with Make"[30m(B[m
+[30m(B[m[?2004l]0;git /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[main f74567e] Run script 1 with Make
+ 3 files changed, 377 insertions(+)
+ create mode 100644 1_import_data.log
+ create mode 100644 Makefile
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Km[38;5;196mm[30m(B[m[38;5;240make[30m(B[m[38;5;196ma[38;5;240mke[30m(B[m[38;5;196mk[38;5;240me[30m(B[m[38;5;196me[30m(B[m[38;5;26mmake[30m(B[m
+[30m(B[m[?2004l]0;make /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mmake: `processed/intermediate/licensed_drivers_1983to2014.dta' is up to date.
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kg[38;5;196mg[30m(B[m[38;5;240mit commit -m "Run script 1 with Make"[37D[30m(B[m[38;5;196mi[38;5;240mt commit -m "Run script 1 with Make"[36D[30m(B[m[38;5;196mt[38;5;240m commit -m "Run script 1 with Make"[35D[30m(B[m[38;5;26mgit[38;5;240m commit -m "Run script 1 with Make"[35D[30m(B[m[38;5;26m [38;5;240mcommit -m "Run script 1 with Make"[34D[30m(B[m [38;5;240mcommit -m "Run script 1 with Make"[34D[30m(B[ma[K[38;5;39ma[30m(B[m[38;5;240mdd scripts/1_import_data.do[27D[30m(B[m[38;5;39md[38;5;240md scripts/1_import_data.do[26D[30m(B[m[38;5;39md[38;5;240m scripts/1_import_data.do[25D[30m(B[m[38;5;39m [38;5;240mscripts/1_import_data.do[24D[30m(B[m [38;5;240mscripts/1_import_data.do[24D[30m(B[mM[K[38;5;39m[4mM[30m(B[m[38;5;240makefile[30m(B[m[38;5;39m[4ma[38;5;240m[24mkefile[30m(B[m[38;5;39m[4mk[38;5;240m[24mefile[30m(B[m[38;5;39m[4me[38;5;240m[24mfile[30m(B[m[38;5;39m[4mfile[30m(B[m
+[30m(B[m[?2004l]0;git /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kg[38;5;196mg[30m(B[m[38;5;240mit add Makefile[15D[30m(B[m[38;5;196mi[38;5;240mt add Makefile[14D[30m(B[m[38;5;196mt[38;5;240m add Makefile[13D[30m(B[m[38;5;26mgit[38;5;240m add Makefile[13D[30m(B[m[38;5;26m [38;5;240madd Makefile[12D[30m(B[m [38;5;240madd Makefile[12D[30m(B[mc[K[38;5;240mommit -m "Run script 1 with Make"[33D[30m(B[m[38;5;39mc[38;5;240mommit -m "Run script 1 with Make"[33D[30m(B[m[38;5;39mo[38;5;240mmmit -m "Run script 1 with Make"[32D[30m(B[m[38;5;39mm[38;5;240mmit -m "Run script 1 with Make"[31D[30m(B[m[38;5;39mm[38;5;240mit -m "Run script 1 with Make"[30D[30m(B[m[38;5;39mi[38;5;240mt -m "Run script 1 with Make"[29D[30m(B[m[38;5;39mt[38;5;240m -m "Run script 1 with Make"[28D[30m(B[m[38;5;39m [38;5;240m-m "Run script 1 with Make"[27D[30m(B[m [38;5;240m-m "Run script 1 with Make"[27D[30m(B[m-[38;5;240mm "Run script 1 with Make"[26D[30m(B[m[38;5;39m-[38;5;240mm "Run script 1 with Make"[26D[30m(B[m[38;5;39mm[38;5;240m "Run script 1 with Make"[25D[30m(B[m[38;5;39m [38;5;240m"Run script 1 with Make"[24D[30m(B[m [38;5;240m"Run script 1 with Make"[24D[30m(B[m"[38;5;240mRun script 1 with Make"[23D[30m(B[m[38;5;196m"[38;5;240mRun script 1 with Make"[23D[30m(B[m[38;5;196mB[30m(B[m[K[38;5;240mloom, Draca, Van Reenen published files"[40D[30m(B[m[38;5;196mu[30m(B[m[K[38;5;196mg[30m(B[m[38;5;196mf[30m(B[m[38;5;196mi[30m(B[m[38;5;196mx[30m(B[m[38;5;196m:[30m(B[m[38;5;240m1_import_data.log" [19D[30m(B[m[38;5;196m [30m(B[m[K[38;5;196ma[30m(B[m[38;5;196md[30m(B[m[38;5;196md[30m(B[m[38;5;196m [30m(B[m[38;5;196mE[30m(B[m[38;5;196mx[30m(B[m[38;5;196mc[30m(B[m[38;5;196me[30m(B[m[38;5;196ml[30m(B[m[38;5;196m [30m(B[m[38;5;196md[30m(B[m[38;5;196me[30m(B[m[38;5;196mp[30m(B[m[38;5;196me[30m(B[m[38;5;196mn[30m(B[m[38;5;196md[30m(B[m[K[K[K[K[K[K[38;5;196ms[30m(B[m[38;5;196mo[30m(B[m[38;5;196mu[30m(B[m[38;5;196mr[30m(B[m[38;5;196me[30m(B[m[38;5;196m [30m(B[m[K[K[38;5;196mc[30m(B[m[38;5;196me[30m(B[m[38;5;196m [30m(B[m[38;5;196mt[30m(B[m[38;5;196mo[30m(B[m[38;5;196m [30m(B[m[38;5;196mt[30m(B[m[38;5;196ma[30m(B[m[38;5;196mr[30m(B[m[38;5;196mg[30m(B[m[38;5;196me[30m(B[m[K[K[K[K[K[K[K[K[K[38;5;196m"[30m(B[m[26D[38;5;100m"Bugfix: add Excel source"[30m(B[m
+[30m(B[m[?2004l]0;git /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[main 1bb4dee] Bugfix: add Excel source
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Km[38;5;240make[30m(B[m[38;5;196mm[38;5;240make[30m(B[m[38;5;196ma[38;5;240mke[30m(B[m[38;5;196mk[38;5;240me[30m(B[m[38;5;196me[30m(B[m[38;5;26mmake[30m(B[m
+[30m(B[m[?2004l]0;make /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mstata -b do scripts/3_combine_data.do
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kt[38;5;196mt[30m(B[m[38;5;240mail 1_import_data.log[21D[30m(B[m[38;5;196ma[38;5;240mil 1_import_data.log[20D[30m(B[m[38;5;196mi[38;5;240ml 1_import_data.log[19D[30m(B[m[38;5;196ml[38;5;240m 1_import_data.log[18D[30m(B[m[38;5;26mtail[38;5;240m 1_import_data.log[18D[30m(B[m[38;5;26m [38;5;240m1_import_data.log[17D[30m(B[m [38;5;240m1_import_data.log[17D[30m(B[m3[K[38;5;39m[4m3[30m(B[m[38;5;240m_combine_data.log [18D[30m(B[m[38;5;39m[4m_[38;5;240m[24mcombine_data.log [17D[30m(B[m[38;5;39m[4mcombine_data.log [30m(B[m[19D[38;5;39m3_combine_data.log[30m(B[m 
+[30m(B[m[?2004l]0;tail /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m. * PURPOSE: Create the final datasets used in the analyses
+. ************
+. 
+. * Preamble (unnecessary when executing run.do)
+. do "$Driving/scripts/programs/_config.do"
+file /scripts/programs/_config.do not found
+r(601);
+
+end of do-file
+r(601);
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Ktail 3_combine_data.log[23D[38;5;26mtail[30m(B[m [38;5;39m[4m3_combine_data.log[30m(B[m[23D[38;5;26mmake[30m(B[m[K
+[30m(B[m[?2004l]0;make /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mstata -b do scripts/3_combine_data.do
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kt[38;5;196mt[30m(B[m[38;5;240mail 3_combine_data.log[22D[30m(B[m[38;5;196ma[38;5;240mil 3_combine_data.log[21D[30m(B[m[38;5;196mi[38;5;240ml 3_combine_data.log[20D[30m(B[m[38;5;196ml[38;5;240m 3_combine_data.log[19D[30m(B[m[38;5;26mtail[38;5;240m 3_combine_data.log[19D[30m(B[m[38;5;26m 3_combine_data.log[30m(B[m[19D [38;5;39m[4m3_combine_data.log[30m(B[m
+[30m(B[m[?2004l]0;tail /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m. save "$Driving/processed/fhwa_8314.dta", replace
+file ./processed/fhwa_8314.dta saved
+. 
+. }
+
+. 
+. 
+. ** EOF
+. 
+end of do-file
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Km[38;5;240make[30m(B[m[38;5;196mm[38;5;240make[30m(B[m[38;5;196ma[38;5;240mke[30m(B[m[38;5;196mk[38;5;240me[30m(B[m[38;5;196me[30m(B[m[38;5;26mmake[30m(B[m
+[30m(B[m[?2004l]0;make /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mmake: `processed/fhwa_8314.dta' is up to date.
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Km[38;5;240make[30m(B[m[38;5;196mm[38;5;240make[30m(B[m[38;5;196ma[38;5;240mke[30m(B[m[38;5;196mk[38;5;240me[30m(B[m[38;5;196m [30m(B[m [K[38;5;196me[30m(B[m[38;5;26mmake[30m(B[m[38;5;26m [30m(B[m [38;5;240mtemp/kmonitor.dta[17D[30m(B[mprocessed/intermediate/licensed_drivers_1983to2014.dta]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [38;5;26mmake[30m(B[m processed/intermediate/licensed_drivers_1983to2014.dta[K[54D[38;5;39m[4mprocessed/intermediate/licensed_drivers_1983to2014.dta[30m(B[m[38;5;240m [30m(B[m[K
+[30m(B[m[?2004l]0;make /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mmake: `processed/intermediate/licensed_drivers_1983to2014.dta' is up to date.
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Km[38;5;196mm[30m(B[m[38;5;240make processed/intermediate/licensed_drivers_1983to2014.dta[58D[30m(B[m[38;5;196ma[38;5;240mke processed/intermediate/licensed_drivers_1983to2014.dta[57D[30m(B[m[38;5;196mk[38;5;240me processed/intermediate/licensed_drivers_1983to2014.dta[56D[30m(B[m[38;5;196me[38;5;240m processed/intermediate/licensed_drivers_1983to2014.dta[55D[30m(B[m[38;5;26mmake[38;5;240m processed/intermediate/licensed_drivers_1983to2014.dta[55D[30m(B[m[K
+[30m(B[m[?2004l]0;make /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mstata -b do scripts/3_combine_data.do
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Km[38;5;240make[30m(B[m[38;5;196mm[38;5;240make[30m(B[m[38;5;196ma[38;5;240mke[30m(B[m[38;5;196mk[38;5;240me[30m(B[m[38;5;196me[30m(B[m[38;5;26mmake[30m(B[m
+[30m(B[m[?2004l]0;make /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mmake: `processed/fhwa_8314.dta' is up to date.
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kg[38;5;240mit commit -m "Bugfix: add Excel source"[39D[30m(B[m[38;5;196mg[38;5;240mit commit -m "Bugfix: add Excel source"[39D[30m(B[m[38;5;196mi[38;5;240mt commit -m "Bugfix: add Excel source"[38D[30m(B[m[38;5;196mt[38;5;240m commit -m "Bugfix: add Excel source"[37D[30m(B[m[38;5;26mgit[38;5;240m commit -m "Bugfix: add Excel source"[37D[30m(B[m[38;5;26m [38;5;240mcommit -m "Bugfix: add Excel source"[36D[30m(B[m [38;5;240mcommit -m "Bugfix: add Excel source"[36D[30m(B[ma[K[38;5;39ma[30m(B[m[38;5;240mdd Makefile[11D[30m(B[m[38;5;39md[38;5;240md Makefile[10D[30m(B[m[38;5;39md[38;5;240m Makefile[9D[30m(B[m[38;5;39m [38;5;240mMakefile[30m(B[m [38;5;240mMakefile[30m(B[mM[38;5;240makefile[30m(B[m[38;5;39m[4mM[38;5;240m[24makefile[30m(B[m[38;5;39m[4ma[38;5;240m[24mkefile[30m(B[m[38;5;39m[4mk[38;5;240m[24mefile[30m(B[m[38;5;39m[4me[38;5;240m[24mfile[30m(B[m[38;5;39m[4mfile[30m(B[m
+[30m(B[m[?2004l]0;git /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kg[38;5;240mit add Makefile[15D[30m(B[m[38;5;196mg[38;5;240mit add Makefile[15D[30m(B[m[38;5;196mi[38;5;240mt add Makefile[14D[30m(B[m[38;5;196mt[38;5;240m add Makefile[13D[30m(B[m[38;5;26mgit[38;5;240m add Makefile[13D[30m(B[m[38;5;26m [38;5;240madd Makefile[12D[30m(B[m [38;5;240madd Makefile[12D[30m(B[ma[38;5;240mdd Makefile[11D[30m(B[m[38;5;39ma[38;5;240mdd Makefile[11D[30m(B[m[38;5;39md[38;5;240md Makefile[10D[30m(B[m[38;5;39md[38;5;240m Makefile[9D[30m(B[m[38;5;39m [38;5;240mMakefile[30m(B[m [38;5;240mMakefile[30m(B[ms[K[38;5;240mcripts/1_import_data.do[23D[30m(B[m[38;5;39m[4ms[38;5;240m[24mcripts/1_import_data.do[23D[30m(B[m[38;5;39m[4mc[38;5;240m[24mripts/1_import_data.do[22D[30m(B[m[38;5;39m[4mr[38;5;240m[24mipts/1_import_data.do[21D[30m(B[m[38;5;39m[4mipts/[38;5;240m[24m1_import_data.do[16D[30m(B[m[38;5;39m[4m3[30m(B[m[K[38;5;240m_combine_data.do [17D[30m(B[m[38;5;39m[4m_combine_data.do [30m(B[m[26D[38;5;39mscripts/3_combine_data.do[30m(B[m 
+[30m(B[m[?2004l]0;git /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Ki[38;5;240mfconfig -a[10D[30m(B[m[38;5;196mi[38;5;240mfconfig -a[10D[30m(B[m[Kg[38;5;196mg[30m(B[m[38;5;240mit add scripts/3_combine_data.do[32D[30m(B[m[38;5;196mi[38;5;240mt add scripts/3_combine_data.do[31D[30m(B[m[38;5;196mt[38;5;240m add scripts/3_combine_data.do[30D[30m(B[m[38;5;26mgit[38;5;240m add scripts/3_combine_data.do[30D[30m(B[m[38;5;26m [38;5;240madd scripts/3_combine_data.do[29D[30m(B[m [38;5;240madd scripts/3_combine_data.do[29D[30m(B[ma[38;5;240mdd scripts/3_combine_data.do[28D[30m(B[m[38;5;39ma[38;5;240mdd scripts/3_combine_data.do[28D[30m(B[m[38;5;39md[38;5;240md scripts/3_combine_data.do[27D[30m(B[m[38;5;39md[38;5;240m scripts/3_combine_data.do[26D[30m(B[m[38;5;39m [38;5;240mscripts/3_combine_data.do[25D[30m(B[m [38;5;240mscripts/3_combine_data.do[25D[30m(B[m3[K[38;5;39m[4m3[30m(B[m[38;5;240m_combine_data.log [18D[30m(B[m[38;5;39m[4m_[38;5;240m[24mcombine_data.log [17D[30m(B[m[38;5;39m[4mcombine_data.log [30m(B[m[19D[38;5;39m3_combine_data.log[30m(B[m 
+[30m(B[m[?2004l]0;git /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kg[38;5;196mg[30m(B[m[38;5;240mit add 3_combine_data.log[25D[30m(B[m[38;5;196mi[38;5;240mt add 3_combine_data.log[24D[30m(B[m[38;5;196mt[38;5;240m add 3_combine_data.log[23D[30m(B[m[38;5;26mgit[38;5;240m add 3_combine_data.log[23D[30m(B[m[38;5;26m [38;5;240madd 3_combine_data.log[22D[30m(B[m [38;5;240madd 3_combine_data.log[22D[30m(B[mc[K[38;5;240mommit -m "Bugfix: add Excel source"[35D[30m(B[m[38;5;39mc[38;5;240mommit -m "Bugfix: add Excel source"[35D[30m(B[m[38;5;39mo[38;5;240mmmit -m "Bugfix: add Excel source"[34D[30m(B[m[38;5;39mo[30m(B[m[K[38;5;39mm[30m(B[m[38;5;39mt[30m(B[m[K[K[K[38;5;39mm[30m(B[m[38;5;240mmit -m "Bugfix: add Excel source"[33D[30m(B[m[38;5;39mm[38;5;240mit -m "Bugfix: add Excel source"[32D[30m(B[m[38;5;39mi[38;5;240mt -m "Bugfix: add Excel source"[31D[30m(B[m[38;5;39mt[38;5;240m -m "Bugfix: add Excel source"[30D[30m(B[m[38;5;39m [38;5;240m-m "Bugfix: add Excel source"[29D[30m(B[m [38;5;240m-m "Bugfix: add Excel source"[29D[30m(B[m-[38;5;240mm "Bugfix: add Excel source"[28D[30m(B[m[38;5;39m-[38;5;240mm "Bugfix: add Excel source"[28D[30m(B[m[38;5;39mm[38;5;240m "Bugfix: add Excel source"[27D[30m(B[m[38;5;39m [38;5;240m"Bugfix: add Excel source"[26D[30m(B[m [38;5;240m"Bugfix: add Excel source"[26D[30m(B[m"[38;5;240mBugfix: add Excel source"[25D[30m(B[m[38;5;196m"[38;5;240mBugfix: add Excel source"[25D[30m(B[m[38;5;196mA[30m(B[m[K[38;5;240mdd some documentation"[22D[30m(B[m[38;5;196md[38;5;240md some documentation"[21D[30m(B[m[38;5;196md[38;5;240m some documentation"[20D[30m(B[m[38;5;196m [38;5;240msome documentation"[19D[30m(B[m[38;5;196ms[38;5;240mome documentation"[18D[30m(B[m[38;5;196mt[30m(B[m[K[38;5;196me[30m(B[m[38;5;196mp[30m(B[m[38;5;196m [30m(B[m[38;5;196m3[30m(B[m[38;5;196m [30m(B[m[38;5;196mt[30m(B[m[38;5;196mo[30m(B[m[38;5;196m [30m(B[m[38;5;196mM[30m(B[m[38;5;196ma[30m(B[m[38;5;196mk[30m(B[m[38;5;196me[30m(B[m[38;5;196mf[30m(B[m[38;5;196mi[30m(B[m[38;5;196ml[30m(B[m[38;5;196me[30m(B[m[38;5;196m"[30m(B[m[24D[38;5;100m"Add step 3 to Makefile"[30m(B[m
+[30m(B[m[?2004l]0;git /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[main 764750b] Add step 3 to Makefile
+ 3 files changed, 314 insertions(+)
+ create mode 100644 3_combine_data.log
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kp[38;5;196mp[30m(B[m[38;5;240mwd[30m(B[m[38;5;196mw[38;5;240md[30m(B[m[38;5;196md[30m(B[m[38;5;26mpwd[30m(B[m
+[30m(B[m[?2004l]0;pwd /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m/Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Km[38;5;196mm[30m(B[m[38;5;240make[30m(B[m[38;5;196ma[38;5;240mke[30m(B[m[38;5;196mk[38;5;240me[30m(B[m[38;5;196me[30m(B[m[38;5;26mmake[30m(B[m
+[30m(B[m[?2004l]0;make /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mstata -b do scripts/1_import_data.do
+echo "We have completed Stata"	
+We have completed Stata
+stata -b do scripts/3_combine_data.do
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Km[38;5;240make[30m(B[m[38;5;196mm[38;5;240make[30m(B[m[38;5;196ma[38;5;240mke[30m(B[m[38;5;196mk[38;5;240me[30m(B[m[38;5;196me[30m(B[m[38;5;26mmake[30m(B[m
+[30m(B[m[?2004l]0;make /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mmake: `processed/fhwa_8314.dta' is up to date.
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Km[38;5;196mm[30m(B[m[38;5;240make[30m(B[m[38;5;196ma[38;5;240mke[30m(B[m[38;5;196mk[38;5;240me[30m(B[m[38;5;196me[30m(B[m[38;5;26mmake[30m(B[m
+[30m(B[m[?2004l]0;make /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mmake: `processed/fhwa_8314.dta' is up to date.
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kg[38;5;240mit commit -m "Add step 3 to Makefile"[37D[30m(B[m[38;5;196mg[38;5;240mit commit -m "Add step 3 to Makefile"[37D[30m(B[m[38;5;196mi[38;5;240mt commit -m "Add step 3 to Makefile"[36D[30m(B[m[38;5;196mt[38;5;240m commit -m "Add step 3 to Makefile"[35D[30m(B[m[38;5;26mgit[38;5;240m commit -m "Add step 3 to Makefile"[35D[30m(B[m[38;5;26m [38;5;240mcommit -m "Add step 3 to Makefile"[34D[30m(B[m [38;5;240mcommit -m "Add step 3 to Makefile"[34D[30m(B[ms[K[38;5;39m[4ms[30m(B[m[38;5;240mtatus[30m(B[m[38;5;39m[4my[30m(B[m[K[38;5;39msy[30m(B[m[38;5;39mt[30m(B[m[38;5;39ma[30m(B[m[38;5;39mt[30m(B[m[K[K[K[K[38;5;39m[4ms[30m(B[m[38;5;39m[4mt[30m(B[m[38;5;240matus[30m(B[m[38;5;39m[4ma[38;5;240m[24mtus[30m(B[m[38;5;39m[4mt[38;5;240m[24mus[30m(B[m[38;5;39m[4mu[38;5;240m[24ms[30m(B[m[38;5;39mstatu[38;5;240ms[30m(B[m[38;5;39ms[30m(B[m
+[30m(B[m[?2004l]0;git /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mOn branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   1_import_data.log[m
+	[31mmodified:   3_combine_data.log[m
+	[31mmodified:   data/add_health/create_addhealth_derived.do[m
+	[31mmodified:   data/mortality/create_mortality_derived.do[m
+	[31mmodified:   data/seer/create_seer_derived.do[m
+	[31mmodified:   processed/fhwa_8314.dta[m
+	[31mmodified:   processed/intermediate/licensed_drivers_1983to2014.dta[m
+	[31mmodified:   processed/intermediate/mdalaws_monthly8314.dta[m
+	[31mmodified:   results/figures/appendix_license_trends_ages1619.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_drowning.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_female.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_firearm.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_male.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_other.pdf[m
+	[31mmodified:   results/figures/appendix_mort_trends_poisoning.pdf[m
+	[31mmodified:   results/figures/appendix_vmt_trends_ages1619.pdf[m
+	[31mmodified:   results/figures/placebo_cod_mva_all.pdf[m
+	[31mmodified:   results/figures/placebo_cod_mva_female.pdf[m
+	[31mmodified:   results/figures/placebo_cod_mva_male.pdf[m
+	[31mmodified:   results/figures/placebo_cod_sa_poisoning_all.pdf[m
+	[31mmodified:   results/figures/placebo_cod_sa_poisoning_female.pdf[m
+	[31mmodified:   results/figures/placebo_cod_sa_poisoning_male.pdf[m
+	[31mmodified:   results/figures/rd_any_ext_int_female.pdf[m
+	[31mmodified:   results/figures/rd_any_ext_int_male.pdf[m
+	[31mmodified:   results/figures/rd_any_male_female.pdf[m
+	[31mmodified:   results/figures/rd_extother_female.pdf[m
+	[31mmodified:   results/figures/rd_extother_male.pdf[m
+	[31mmodified:   results/figures/rd_license_male_female.pdf[m
+	[31mmodified:   results/figures/rd_mva_male_female.pdf[m
+	[31mmodified:   results/figures/rd_notenrolled.pdf[m
+	[31mmodified:   results/figures/rd_sa_drowning_female.pdf[m
+	[31mmodified:   results/figures/rd_sa_drowning_male.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_female.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_gas_female.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_gas_male.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_male.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_subst_female.pdf[m
+	[31mmodified:   results/figures/rd_sa_poisoning_subst_male.pdf[m
+	[31mmodified:   results/figures/rd_vehiclemiles_150.pdf[m
+	[31mmodified:   results/figures/rd_vehiclemiles_265.pdf[m
+	[31mmodified:   results/figures/rd_vmd150_male_female.pdf[m
+	[31mmodified:   results/figures/rd_work4weeks.pdf[m
+	[31mmodified:   results/figures/yearbins_cod_mva_female.pdf[m
+	[31mmodified:   results/figures/yearbins_cod_mva_male.pdf[m
+	[31mmodified:   results/figures/yearbins_cod_sa_poisoning_female.pdf[m
+	[31mmodified:   results/figures/yearbins_cod_sa_poisoning_male.pdf[m
+	[31mmodified:   results/intermediate/addhealth_rd.dta[m
+	[31mmodified:   results/intermediate/adjustedp.dta[m
+	[31mmodified:   results/intermediate/mortality_rd.dta[m
+	[31mmodified:   results/intermediate/mortality_rd_placebo.dta[m
+	[31mmodified:   results/intermediate/mortality_rd_robustness.dta[m
+	[31mmodified:   results/intermediate/mortality_rd_suicide_acct.dta[m
+	[31mmodified:   run.do[m
+	[31mmodified:   run.log[m
+	[31mmodified:   scripts/1_import_data.do[m
+	[31mmodified:   scripts/2_clean_data.do[m
+	[31mmodified:   scripts/3_combine_data.do[m
+	[31mmodified:   scripts/4_analysis.do[m
+	[31mmodified:   scripts/5_supporting_analysis.do[m
+	[31mmodified:   scripts/6_tables.do[m
+	[31mmodified:   scripts/programs/_config.do[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mrecord.sh[m
+	[31mscripts/logs/[m
+	[31mstata.log[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Km[38;5;240make[30m(B[m[38;5;196mm[38;5;240make[30m(B[m[38;5;196ma[38;5;240mke[30m(B[m[38;5;196mk[38;5;240me[30m(B[m[38;5;196me[30m(B[m[38;5;26mmake[30m(B[m
+[30m(B[m[?2004l]0;make /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mstata -b do scripts/3_combine_data.do
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Kmake[38;5;26mmake[30m(B[m
+[30m(B[m[?2004l]0;make /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[mmake: `processed/fhwa_8314.dta' is up to date.
+[?2004h]0;fish /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[2m⏎(B[m                                                                                                                     ⏎ [Kkoren@iMac [32m~/D/w/r/ecbs-6233-reif-julian-driving[30m(B[m> [Ke[38;5;196me[30m(B[m[38;5;240mxit[30m(B[m[38;5;196mx[38;5;240mit[30m(B[m[38;5;26mex[38;5;240mit[30m(B[m[38;5;26mi[38;5;240mt[30m(B[m[38;5;196mexi[38;5;240mt[30m(B[m[38;5;196mt[30m(B[m[38;5;26mexit[30m(B[m
+[30m(B[m[?2004l]0;exit /Users/koren/Documents/workspace/repro/ecbs-6233-reif-julian-driving[30m(B[m[30m(B[m[?2004l
