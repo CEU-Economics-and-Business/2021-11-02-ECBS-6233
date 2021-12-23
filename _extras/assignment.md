@@ -9,6 +9,8 @@ Feel free to consult class notes, Google, StackOverflow, each other, but **type 
 
 Show all your work in a public GitHub repository. (Please start a new one.) 
 
+Choose one (not both) of the two tracks below.
+
 ### Track 1
 1. Take a paper to replicate. Pick one [from here](https://www.i4replication.org/reports.html), [here](https://zenodo.org/communities/restud-replication), or anywhere you like. The paper can use any programming language.
 2. Download its replication package and commit it to a new GitHub repository. 
